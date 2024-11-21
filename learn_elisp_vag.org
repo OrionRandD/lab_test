@@ -9,220 +9,219 @@
 
 * Learn elisp :lab_test:eev:emacs:doom:
 
-Note: F12 and F11 in Xfce4 toggle a terminal window
+;; Note: F12 and F11 in Xfce4 toggle a terminal window
 
-Main tutorial
+;; Main tutorial
 
-M-x find-emacs-keys-intro
-M-h M-h	  find-here-links
-M-0 M-e	highlights the function
-(find-enode "Moving by Defuns")
-M-x find-1stclassvideos	find eev video tutorials
+;; M-x find-emacs-keys-intro
+;; M-h M-h	  find-here-links
+;; M-0 M-e	highlights the function
+;; (find-enode "Moving by Defuns")
+;; M-x find-1stclassvideos	find eev video tutorials
 
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 **  GNU Emacs howto
- en Español
- (find-eww "https://texto-plano.xyz/~tano/archivos-sphinx/CapConSecciones/40_EmacsComoServ.html")
 
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;  en Español
+;;  (find-eww "https://texto-plano.xyz/~tano/archivos-sphinx/CapConSecciones/40_EmacsComoServ.html")
+
+;; ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ** Doom Emacs
 
-# doom-emacs without evil-mode
+;; doom-emacs without evil-mode
 
-M-x use doom-sandbox
-or
-setting it persistently
-or
-C-z	evil-emacs-state on the fly
+;; M-x use doom-sandbox
+;; or
+;; setting it persistently
+;; or
+;; C-z	evil-emacs-state on the fly
 
-Note: You can use evil-emacs-state on the fly to teach emacs-normal-state keybindings to your students as well
+;; Note: You can use evil-emacs-state on the fly to teach emacs-normal-state keybindings to your students as well
 
-Warning:
-kill-ring can be dangerous
-You can clean it with:
-M-: (setq kill-ring nil)
+;; Warning:
+;; kill-ring can be dangerous
+;; You can clean it with:
+;; M-: (setq kill-ring nil)
 
-M-y	in Emacs normal state
-C-x c M-y	in doom_Emacs
-
-#+begin_src raw
+;; M-y	in Emacs normal state
+;; C-x c M-y	in doom_Emacs
 
 ** Learn Emacs
 
-M-x amx
-M-x amx-mode
+;; M-x amx
+;; M-x amx-mode
 
-M-x command-log
-then:
-C-c o	to open command-log buffer
-then:
-M-x visual-line-mode
+;; M-x command-log
+;; then:
+;; C-c o	to open command-log buffer
+;; then:
+;; M-x visual-line-mode
 
-M-x apropos-*	(explore its options)
-M-x apropos-command
-then:
-page$
+;; M-x apropos-*	(explore its options)
+;; M-x apropos-command
+;; then:
+;; page$
 
-Marks 
-C-@	mark
-C-Spc	mark
-C-Spc C-Spc	deactivate the mark 
-C-u C-Spc	jump back to the mark (go further and further the mark ring)
-C-x C-x	exchanges the point and the mark
-C-x o	jump to window
-C-x o (j, l, k, i)	(enlarge left, enlarge right, enlarge down, enlarge up) and jump to window
+;; Marks 
+;; C-@	mark
+;; C-Spc	mark
+;; C-Spc C-Spc	deactivate the mark 
+;; C-u C-Spc	jump back to the mark (go further and further the mark ring)
+;; C-x C-x	exchanges the point and the mark
+;; C-x o	jump to window
+;; C-x o (j, l, k, i)	(enlarge left, enlarge right, enlarge down, enlarge up) and jump to window
 
-Efficient marking
-M-@	mark next word (keep hitting @ to mark next words)
-M-5 M-@	mark next five (#n) file words
-M-h	mark next pargraph
-C-M-]	mark next pargraph
-C-x h	mark (select)  the whole buffer
-C-M-h	mark next defun (try this in no lisp or other programming language files)
-C-M-Spc	mark the next sexp
-C-M-- C-M-Spc	mark back the sexp
+;; Efficient marking
+;; M-@	mark next word (keep hitting @ to mark next words)
+;; M-5 M-@	mark next five (#n) file words
+;; M-h	mark next pargraph
+;; C-M-]	mark next pargraph
+;; C-x h	mark (select)  the whole buffer
+;; C-M-h	mark next defun (try this in no lisp or other programming language files)
+;; C-M-Spc	mark the next sexp
+;; C-M-- C-M-Spc	mark back the sexp
 
-C-M-@	mark the next sexp
-C-x C-p	mark next page
+;; C-M-@	mark the next sexp
+;; C-x C-p	mark next page
 
-Registers
-C-x r	register prefix-key
-C-x r s	stores region in a register
-C-x r i	insert register after point
-C-u C-x r i	insert register before the point 
+;; Registers
+;; C-x r	register prefix-key
+;; C-x r s	stores region in a register
+;; C-x r i	insert register after point
+;; C-u C-x r i	insert register before the point 
 
-C-c C-a	attachment type
+;; C-c C-a	attachment type
 
-M-x elisp-index-search
-;; it is good for searching elisp documentation
+;; M-x elisp-index-search
+;; ;; it is good for searching elisp documentation
 
-M-x emacs-index-search
-;; it is good for searching emacs documentation
+;; M-x emacs-index-search
+;; ;; it is good for searching emacs documentation
 
-M-x visual-line-mode
-M-- negative argument
-M-x rot13-region
-M-x rot13-other-window
-C-h a apropos-regex 
-M-j eev-mode-map
-M-x find-anchors-intro
-M-x find-eepitch-intro
-M-x find-eev-intro
-M-x find-ekeydescr	(C-h k)
-M-x find-ekey-intro
-M-x find-ekey-links
-M-x find-elisp-intro
-M-x find-elongkey-links
-M-x find-emacs-intro
-M-x find-emacs-keys-intro
-M-x find-epackage
-M-x find-epackages
-M-x find-esetkey-links
-M-x find-esetkey-links
-M-x find-eshortdoc
-M-x find-evariable
-M-x grep
-M-x grep-find
+;; M-x visual-line-mode
+;; M-- negative argument
+;; M-x rot13-region
+;; M-x rot13-other-window
+;; C-h a apropos-regex 
+;; M-j eev-mode-map
+;; M-x find-anchors-intro
+;; M-x find-eepitch-intro
+;; M-x find-eev-intro
+;; M-x find-ekeydescr	(C-h k)
+;; M-x find-ekey-intro
+;; M-x find-ekey-links
+;; M-x find-elisp-intro
+;; M-x find-elongkey-links
+;; M-x find-emacs-intro
+;; M-x find-emacs-keys-intro
+;; M-x find-epackage
+;; M-x find-epackages
+;; M-x find-esetkey-links
+;; M-x find-esetkey-links
+;; M-x find-eshortdoc
+;; M-x find-evariable
+;; M-x grep
+;; M-x grep-find
 
-M-x find-file-links
-M-x find-helpful-links
+;; M-x find-file-links
+;; M-x find-helpful-links
 
-M-x find-here-links-1 (M-h M-1)
-M-x find-here-links-3 (M-h M-3)
+;; M-x find-here-links-1 (M-h M-1)
+;; M-x find-here-links-3 (M-h M-3)
 
-Note:
-This keybind (M-h M-3)
-does not work on doom-Emacs
-org-mode, you have to call the command
-through "M-x find-here-links-3
+;; Note:
+;; This keybind (M-h M-3)
+;; does not work on doom-Emacs
+;; org-mode, you have to call the command
+;; through "M-x find-here-links-3
 
-Note: in doom-Emacs, you have to hit "C-z" first
-to get into normal-Emacs mode
-
-;; copy the currente file path to the key-ring
-;; then you can paste it and go back to it again
-M-x eekll emacs escript kill link here.el
+;; Note: in doom-Emacs, you have to hit "C-z" first
+;; to get into normal-Emacs mode
+ 
+;; ;; copy the currente file path to the key-ring
+;; ;; then you can paste it and go back to it again
+;; M-x eekll emacs escript kill link here.el
 
 ;; study this
 ;; (find-kl-here-intro "              (find-eev-intro)")
 
-M-x find-lexical-intro
-M-x find-libera-links
-M-x find-name-dired
-M-x find-org-intro
-M-x find-osm-links
-M-x find-pdf-links
-M-x find-pip3-links
+;; M-x find-lexical-intro
+;; M-x find-libera-links
+;; M-x find-name-dired
+;; M-x find-org-intro
+;; M-x find-osm-links
+;; M-x find-pdf-links
+;; M-x find-pip3-links
 
-M-x find-red-star-links
-M-x ee-use-red-stars
+;; M-x find-red-star-links
+;; M-x ee-use-red-stars
 
-Note:
-You have to disable "whitespace-mode" in Doom-Emacs to get red-stars
+;; Note:
+;; You have to disable "whitespace-mode" in Doom-Emacs to get red-stars
 
-M-x ee-use-red-bullets
-M-x find-three-main-keys-intro
-M-x find-videos-intro
-M-x highlight-changes-mode
-M-x global-set-key
-M-x global-unset-key
-M-x chatgpt-shell
-M-x dall-e-shell
-M-x straight-rebuild-package
+;; M-x ee-use-red-bullets
+;; M-x find-three-main-keys-intro
+;; M-x find-videos-intro
+;; M-x highlight-changes-mode
+;; M-x global-set-key
+;; M-x global-unset-key
+;; M-x chatgpt-shell
+;; M-x dall-e-shell
+;; M-x straight-rebuild-package
 
-M-x ipretty-mode
-M-x pretty-mode
-M-x pretty-regexp
-M-x rainbow-mode
-C-m new-line
+;; M-x ipretty-mode
+;; M-x pretty-mode
+;; M-x pretty-regexp
+;; M-x rainbow-mode
+;; C-m new-line
 
-M-x local-set-key
+;; M-x local-set-key
 
-(find-elinode)
-(find-elnode)
-(find-enode)
-(find-etp)
+;; (find-elinode)
+;; (find-elnode)
+;; (find-enode)
+;; (find-etp)
 
-M-n or M-p circle through chatgpt prompts
+;; M-n or M-p circle through chatgpt prompts
 
-After creating a $file.sh, do:
-M-x sh-set-shell
-And:
-M-x describe-mode
-spc x	pop up doom:scratch
+;; After creating a $file.sh, do:
+;; M-x sh-set-shell
+;; And:
+;; M-x describe-mode
+;; spc x	pop up doom:scratch
 
 ;; ee-* Commands:
 
-M-x ee-* 
-e.g.:
-M-x ee-copy*
+;; M-x ee-* 
+;; e.g.:
+;; M-x ee-copy*
 
-;; side-notes
+;; ;; side-notes
 
-M-x side-notes
+;; M-x side-notes
 
 ;;  Emacs guided tour
-
+ 
 ;; Emacs-guided-tour
 ;; (find-eww "https://www.gnu.org/software/emacs/tour/")
-
+ 
 ;;  debian packages (debpkg) infos
+ 
+;; M-x find-debpkg-links	(M-h M-d)
 
-M-x find-debpkg-links	(M-h M-d)
+;; ;; Command-history
 
-;; Command-history
+;; M-x consult-history
+;; M-x command-history
+;; M-x list-command-history
+;; M-x counsel-command-history
 
-M-x consult-history
-M-x command-history
-M-x list-command-history
-M-x counsel-command-history
+;; C-u M-s ! date	inserts date and time in the buffer/file
+;; C-u M-s ! cal -3 inserts three months calendar in the buffer/file
 
-C-u M-s ! date	inserts date and time in the buffer/file
-C-u M-s ! cal -3 inserts three months calendar in the buffer/file
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 M-x execute-extended-command	M-x
 
@@ -231,10 +230,10 @@ M-x execute-extended-command	M-x
 ;; M-x (which is bounded to:)
 ;; M-x execute-extended-command 
 
- (use-package amx
-  :ensure t
-  :config
-   (amx-mode 1));;
+;;  (use-package amx
+;;   :ensure t
+;;   :config
+;;    (amx-mode 1));;
 
 ;; mark
 
@@ -246,70 +245,66 @@ TODO
 
 ** Learn elisp
 
-for configuring Emacs, you can steal codes from Doom-emacs, specially in the modules directory
+;; for configuring Emacs, you can steal codes from Doom-emacs, specially in the modules directory
 
-"~/_.doom_Emacs/modules"
+;; "~/_.doom_Emacs/modules"
 
 ;; (find-fline "\"~/_.doom_Emacs/modules\"")
 
 - https://programming-idioms.org
 
-This is a wonderful command
-M-x describe-symbol - Spc-h o
-M-x hyperspec-lookup
+;; This is a wonderful command
+;; M-x describe-symbol - Spc-h o
+;; M-x hyperspec-lookup
 
-M-x doom/help	information about doom,
-  including its modules and +flags
+;; M-x doom/help	information about doom,
+;;   including its modules and +flags
 
-C-c '	toggle edit a org-mode source-block
+;; C-c '	toggle edit a org-mode source-block
 
-Introduction to Emacs[fn:1]
-
-##+begin_src sh
-
-##+end_src
+;; Introduction to Emacs[fn:1]
 
 ;; buffer manipulation
 
-M-x mark-whole-buffer	selects the whole buffer
-M-x append-to-buffer	append region to the contents of a specified buffer.
-M-x prepend-to-buffer	prepend region to the contents of a specified buffer.
-M-x copy-to-buffer	copy region into a specified buffer, deleting that buffer’s old contents.
-M-x insert-buffer	insert the contents of a specified buffer into current buffer at point.
-M-x append-to-file	append region to the contents of a specified file, at the end.
+;; M-x mark-whole-buffer	selects the whole buffer
+;; M-x append-to-buffer	append region to the contents of a specified buffer.
+;; M-x prepend-to-buffer	prepend region to the contents of a specified buffer.
+;; M-x copy-to-buffer	copy region into a specified buffer, deleting that buffer’s old contents.
+;; M-x insert-buffer	insert the contents of a specified buffer into current buffer at point.
+;; M-x append-to-file	append region to the contents of a specified file, at the end.
 
 ;; local-variables
 
 ;; M-x add-dir-local-variable
 ;; http://tny.im/tZYtm
 
-it is in ~/.dir-locals.el
+;; it is in ~/.dir-locals.el
 
 ;; Major-mode
-M-x describe-variable (^major-mode) -> C-h v
+;; M-x describe-variable (^major-mode) -> C-h v
 (describe-variable 'major-mode)
 
-M-x describe-mode (^eev) -> C-h m
+;; M-x describe-mode (^eev) -> C-h m
 
 ;; with this command:
-M-x describe-bindings -> M-SPC h b b
+;; M-x describe-bindings -> M-SPC h b b
 ;; you can learn doom-Emacs (keys) keybindings
 ;; and Emacs normal-state (keys) keybindings - if you are running it
 
 ;; view-mode
-M-x view-mode
-This is a good mode for reading
+;; M-x view-mode
+;; This is a good mode for reading
 
 ;; tab-bar-mode
-M-x tab-bar-mode
+;; M-x tab-bar-mode
 
 ;; you can disable mouse-clicks with
 
-M-x global-disable-mouse-mode
+;; M-x global-disable-mouse-mode
 
-If it does not work in emacspers-gui,
-Just load the function or the file:
-"disable-mouse.el"
+;; If it does not work in emacspers-gui,
+;; Just load the function or the file:
+;; "disable-mouse.el"
 
 ;; Note: in the minibuffer,
 ;; C-j	to expand
@@ -327,127 +322,127 @@ Just load the function or the file:
 ;; for finding files, it is better than
 ;; dired and zetteldeft
 
-M-x helm-recent
-M-x consult-buffer
-M-x consult-file
-M-x consult-file-externally
-M-x consult-apropos
-M-x consult-yank
-M-x consult-multi-occur
-M-x consult-org-heading
-M-x consult-recent-file
-M-x consult-complex-command
-M-x consult-buffer-other-frame
-M-x consult-buffer-other-window
-M-x consult-register-store
-M-x consult-register-load
-M-x sp-copy-sexp ;; smartparens-copy-sexp
-M-x sp-wrap-round ;; wrap chars with parens or other delimiters
-M-x sp-* ;; explore smartparens functions
-M-x cypher/surround ;; surround region with delimiters 
-M-x browse-url-generic 
-M-x browse-url -> see describe package and set to "browse-url-chromium"
-M-x find-browse-url-links	M-h u  -> on a w3m URL or URL by itself
-M-x brl -> issue this command on a given URL
-M-x clippy-describe-function
-M-x clippy-describe-variable
+;; M-x helm-recent
+;; M-x consult-buffer
+;; M-x consult-file
+;; M-x consult-file-externally
+;; M-x consult-apropos
+;; M-x consult-yank
+;; M-x consult-multi-occur
+;; M-x consult-org-heading
+;; M-x consult-recent-file
+;; M-x consult-complex-command
+;; M-x consult-buffer-other-frame
+;; M-x consult-buffer-other-window
+;; M-x consult-register-store
+;; M-x consult-register-load
+;; M-x sp-copy-sexp ;; smartparens-copy-sexp
+;; M-x sp-wrap-round ;; wrap chars with parens or other delimiters
+;; M-x sp-* ;; explore smartparens functions
+;; M-x cypher/surround ;; surround region with delimiters 
+;; M-x browse-url-generic 
+;; M-x browse-url -> see describe package and set to "browse-url-chromium"
+;; M-x find-browse-url-links	M-h u  -> on a w3m URL or URL by itself
+;; M-x brl -> issue this command on a given URL
+;; M-x clippy-describe-function
+;; M-x clippy-describe-variable
 
 ;; tabs
 
-C-x t	tab commands
-C-x t 2	create a new tab
-C-x t RET	select tab by name
-C-x t 0	close current tab
+;; M-x t	tab commands
+;; M-x t 2	create a new tab
+;; M-x t RET	select tab by name
+;; M-x t 0	close current tab
 
-M-x tab-bar-history-mode	enable history tab-bar
-M-x tab-bar-history-forward	history-forward tab-bar
-M-x tab-bar-history-back	history-back tab-bar
+;; M-x tab-bar-history-mode	enable history tab-bar
+;; M-x tab-bar-history-forward	history-forward tab-bar
+;; M-x tab-bar-history-back	history-back tab-bar
 
-M-x customize-option RET global-tab-line-mode
-or
-M-x global-tab-line-mode
-then: Toggle on
+;; M-x customize-option RET global-tab-line-mode
+;; r
+;; M-x global-tab-line-mode
+;; then: Toggle on
 
-C-x arrow-<	select previous buffer
-Cp-x arrow->	select next buffer
+;; M-x arrow-<	select previous buffer
+;; M-x arrow->	select next buffer
 
-M-x customize-option RET tab-line-tabs-function
- 
+;; M-x customize-option RET tab-line-tabs-function
+
 ;; goto-last-change
 
-M-x goto-last-change
+;; M-x goto-last-change
 
 ;; goto-line
 
-M-x goto-line
-you can use it after:
-M-x occur
+;; M-x goto-line
+;; you can use it after:
+;; M-x occur
 
 ;; ivy
 
-M-x ivy-org-jump-to-heading
+;; M-x ivy-org-jump-to-heading
 
 ;; embark
 
-M-x embark-act[fn:2]	C-; acts on lots of objects (single objects)
+;; M-x embark-act[fn:2]	C-; acts on lots of objects (single objects)
 
-Then:
-(multiple objects)
-embark collect, e.g.: M-x org-agenda "C-;" embark-collect
-embark-export, then *Completions* "C-;"
-embark-collect-live
+;; Then:
+;; (multiple objects)
+;; embark collect, e.g.: M-x org-agenda "C-;" embark-collect
+;; embark-export, then *Completions* "C-;"
+;; embark-collect-live
 
-# counsel
+;; counsel
 
-M-x counsel-Linux-app
+;; M-x counsel-Linux-app
 
 ;; M-p
 
-(global-set-key "\360" 'counsel-yank-pop)
-for consulting the keying in doom-Emacs
+;; (global-set-key "\360" 'counsel-yank-pop)
+;; for consulting the keying in doom-Emacs
 
 ;; M-y
-for consulting the keying in Emacs-normal-state
+;; for consulting the keying in Emacs-normal-state
 
 ;; Navigation
 
-C-f forward one page down
-C-b forward one page up
-C-d scroll down
-C-u scroll up
+;; C-f forward one page down
+;; C-b forward one page up
+;; C-d scroll down
+;; C-u scroll up
 
-Alt-n -> move page down, but point. Note that you've to hold "Meta" and
-n. Otherwise, if you hit "n" it will move the point as well.
-Alt-p -> move page up, but point. Note that you've to hold "Meta" and
-n. Otherwise, if you hit "p" it will move the point as well.
+;; Alt-n -> move page down, but point. Note that you've to hold "Meta" and
+;; n. Otherwise, if you hit "n" it will move the point as well.
+;; Alt-p -> move page up, but point. Note that you've to hold "Meta" and
+;; n. Otherwise, if you hit "p" it will move the point as well.
 
 ;; For presentation mode
 
-M-x doom-modeline-mode
-M-x cypher/org-presentation-mode - "C-c P"
-(doom-modeline-mode 1)
-(doom-modeline-mode 0)
-(doom/toogle-line-numbers) - Spc-t l
-M-x org-id-get-create
-M-x cypher/org-presentation-mode
-M-x cypher/font-set-fonts[fn:3]
-M-x cypher/font-set-font-size-family
-M-x cypher/font-set-fonts
-M-x cypher/zoom-frame
-M-x cypher/zoom-frame-out
-(load-theme 'modus-vivendi)
-(load-theme 'modus-operandi)
-(load-theme 'aliceblue)
-M-x set-transparency
-M-x doom/info
-M-x doom/set-frame-opacity
-M-x doom/describe-module
-M-x doom/help-module
-M-x doom/sandbox
-M-x doom/sudo-find-file - M-Spc f u
+;; M-x doom-modeline-mode
+;; M-x cypher/org-presentation-mode - "C-c P"
+;; (doom-modeline-mode 1)
+;; (doom-modeline-mode 0)
+;; (doom/toogle-line-numbers) - Spc-t l
+;; M-x org-id-get-create
+;; M-x cypher/org-presentation-mode
+;; M-x cypher/font-set-fonts[fn:3]
+;; M-x cypher/font-set-font-size-family
+;; M-x cypher/font-set-fonts
+;; M-x cypher/zoom-frame
+;; M-x cypher/zoom-frame-out
+;; (load-theme 'modus-vivendi)
+;; (load-theme 'modus-operandi)
+;; (load-theme 'aliceblue)
+;; M-x set-transparency
+;; M-x doom/info
+;; M-x doom/set-frame-opacity
+;; M-x doom/describe-module
+;; M-x doom/help-module
+;; M-x doom/sandbox
+;; M-x doom/sudo-find-file - M-Spc f u
 
 ;; org-tree-slide-mode
-M-x org-tree-slide-mode
+;; M-x org-tree-slide-mode
 
 ;; crdt, Emacs and tuntox for remote
 
@@ -472,20 +467,20 @@ M-x org-tree-slide-mode
 ;; or tmux session
 
 ;; webcamoid
-sudo apt install webcamoid webcamoid-plugins
-win-F2 webcamoid
-then you can use jitsi, element-desktop, or discord with it
-takes lots of memory!
+;; sudo apt install webcamoid webcamoid-plugins
+;; win-F2 webcamoid
+;; then you can use jitsi, element-desktop, or discord with it
+;; takes lots of memory!
 
-;; Emacsclient
+;; ;; Emacsclient
 ;; https://github.com/tjim/lockstep
 
-emacsclient -a '' -c
-for a graphical Emacs, or
-emacsclient -a '' -t
-for an Emacs terminal session
+;; emacsclient -a '' -c
+;; for a graphical Emacs, or
+;; emacsclient -a '' -t
+;; for an Emacs terminal session
 
-C-x #	kills emacsclient
+;; C-x #	kills emacsclient
 
 ;; breaking lines in org
 
@@ -493,130 +488,131 @@ C-j (org-return-and-maybe-indent)
 
 ;; comint
 
-M-x comint-run - run a program as an Emacs buffer
+;; M-x comint-run - run a program as an Emacs buffer
 
 ;; you can use these commands for creating files:
 
-notdeft-new-file-named
-C-c n c	org-roam-capture
-zetteldeft-new-file
-M-x org-roam-node-find
-you can also access *deft* buffer and open files from there
-M-x org-roam-db-sync
+;; notdeft-new-file-named
+;; C-c n c	org-roam-capture
+;; zetteldeft-new-file
+;; M-x org-roam-node-find
+;; you can also access *deft* buffer and open files from there
+;; M-x org-roam-db-sync
 
-note:
-do NOT use "org-roam-find-file",
-but:
-"org-roam-node-find"
+;; note:
+;; do NOT use "org-roam-find-file",
+;; but:
+;; "org-roam-node-find"
 
 ;; Working with file (id's) ID's
 ;; M-x org-id*
 ;; M-x org-roam-update-org-id*
 
 ;; emacsclient
-emacsclient --help	in a terminal, see the emacsclient help
-emacsclient -nw	in a terminal, it connects to an already open session
-emacs -nw -bg red	set a background color in terminal/tty
-emacsclient -nw -bg yellow	set a background color in terminal/tty
-emacs -nw -bg red -fg white	set a background and foreground colors in terminal/tty
-emacsclient -nw -bg yellow -fg black	set a background colors in terminal/tty
 
-M-x set-background-color
+;; emacsclient --help	in a terminal, see the emacsclient help
+;; emacsclient -nw	in a terminal, it connects to an already open session
+;; emacs -nw -bg red	set a background color in terminal/tty
+;; emacsclient -nw -bg yellow	set a background color in terminal/tty
+;; emacs -nw -bg red -fg white	set a background and foreground colors in terminal/tty
+;; emacsclient -nw -bg yellow -fg black	set a background colors in terminal/tty
 
-(straight-pull-all) ;; update all my packages and MELPA repositories
+;; M-x set-background-color
 
-** erc
+;; (straight-pull-all) ;; update all my packages and MELPA repositories
+
+*;; * erc
 
 ;; ERC (emacs)
 ;; M-x erc
 ;; then:
 ;; M-x Libera.Chat
 
-(erc)	evaluate it
-(erc-spelling-mode)
-(erc-nickserv-identify)
+;; (erc)	evaluate it
+;; (erc-spelling-mode)
+;; (erc-nickserv-identify)
 
 ;; then type your password
 
-(eros-mode)
+;; (eros-mode)
 
-(help-with-tutorial-spec-language)	
-(help-with-tutorial)	C-h t
-(info)	"C-h i" then "C-h m" (to show how to navigate in the info tutorial
-(menu-bar-mode -1)
+;; (help-with-tutorial-spec-language)	
+;; (help-with-tutorial)	C-h t
+;; (info)	"C-h i" then "C-h m" (to show how to navigate in the info tutorial
+;; (menu-bar-mode -1)
 
 ;; (menu-bar-mode +1)
 
-(tool-bar-mode 0)
-(scroll-bar-mode 0)
-
-(hide-mode-line-mode 1)
-(global-hide-mode-line-mode 1)
+;; (tool-bar-mode 0)
+;; (scroll-bar-mode 0)
+ 
+;; (hide-mode-line-mode 1)
+;; (global-hide-mode-line-mode 1)
 
 ;; in emacs - NOT doom_emacs
-(setq mode-line-format true)	disable mode-line locally
-(setq-default mode-line-format nil)	disable mode-line globally 
+;; (setq mode-line-format true)	disable mode-line locally
+;; (setq-default mode-line-format nil)	disable mode-line globally 
 
-(setq visible-bell t)
-(blink-cursor-mode 0)
-(show-paren-mode t)
-(load-theme 'misterioso)
+;; (setq visible-bell t)
+;; (blink-cursor-mode 0)
+;; (show-paren-mode t)
+;; (load-theme 'misterioso)
 
-(restart-emacs)
+;; (restart-emacs)
 
-you can also start emacs from terminal like this:
-emacs -fg bisque -bg black
+;; you can also start emacs from terminal like this:
+;; emacs -fg bisque -bg black
 
 ;; (require 'bar-cursor)	;; this is a function not in default
-emacs. So, you have install and require it - via your
-package-manager or by hand - call it with "require" and enable it with: 
+;; emacs. So, you have install and require it - via your
+;; package-manager or by hand - call it with "require" and enable it with: 
 ;; (bar-cursor-mode t)
 
-(setq line-spacing 2)	;; this is a variable, NOT a function
-(set-background-color "lightgray")
-(set-foreground-color "black")
-(describe-function 'set-foreground-color)
-(describe-function 'describe-function)	;; bound to C-h f
-(describe-function 'describe-variable)	;; bound to C-h v
-(toggle-truncate-lines t)
-(toggle-truncate-lines nil)
-(truncate-partial-width-windows t)
-(truncate-partial-width-windows nil)
-(all-the-icons-dired-mode)
-(apropos-command "async-shell-command")	C-h a
-(shell-command "xcowsay hi")
-(avy-goto-char)	M-s
-(beginning-of-buffer)	M-<
-
-(browse-url-xdg-open "https://mail.protonmail.com")
-or
-helm-browse-url-firefox - you have to copy the url befohand
-M-x shr-copy-url - copy url under the point/image
-(close-all-buffers)	C-M-s-k
-(cyber-cut-line-or-region)	C-M x
-(cyber-new-empty-buffer)	M-N  -   then you call (message-mode)
-(cyber/copy-whole-line) 	C-c l c
-(cyber/kill-inner-word)	C-c i w
-(delete-duplicate-lines)	fix this
-(describe-function 'close-all-buffers)	C-h f
-(describe-function 'eloud-mode)
-(describe-function 'helm-stumpwm-commands)
-(describe-function 'key-chord-mode)
-(describe-function 'mpd-next)
-(describe-function 'rename-buffer)
-(describe-key)	C-h k
-(dired "/home/lea")	C-x d
-(display-time)
-(ecb-activate)
-(ecb-minor-mode)	toggle ecb-minor-mode
-(eloud-mode 1)
-(end-of-buffer)	M->
-(endless/ispell-word-then-abbrev t)	M-x TAB
-(find-file "/home/lea/.emacs.d/init.org")
-(find-file "/tmp/lea_message")
-(finder-by-keyword)	;; C-h p
-(global-set-key "\C-cH" 'hyperspec-lookup)
-(helm-man-woman t)	manpages from within emacs
+;; (setq line-spacing 2)	;; this is a variable, NOT a function
+;; (set-background-color "lightgray")
+;; (set-foreground-color "black")
+;; (describe-function 'set-foreground-color)
+;; (describe-function 'describe-function)	;; bound to C-h f
+;; (describe-function 'describe-variable)	;; bound to C-h v
+;; (toggle-truncate-lines t)
+;; (toggle-truncate-lines nil)
+;; (truncate-partial-width-windows t)
+;; (truncate-partial-width-windows nil)
+;; (all-the-icons-dired-mode)
+;; (apropos-command "async-shell-command")	C-h a
+;; (shell-command "xcowsay hi")
+;; (avy-goto-char)	M-s
+;; (beginning-of-buffer)	M-<
+;; 
+;; (browse-url-xdg-open "https://mail.protonmail.com")
+;; or
+;; helm-browse-url-firefox - you have to copy the url befohand
+;; M-x shr-copy-url - copy url under the point/image
+;; (close-all-buffers)	C-M-s-k
+;; (cyber-cut-line-or-region)	C-M x
+;; (cyber-new-empty-buffer)	M-N  -   then you call (message-mode)
+;; (cyber/copy-whole-line) 	C-c l c
+;; (cyber/kill-inner-word)	C-c i w
+;; (delete-duplicate-lines)	fix this
+;; (describe-function 'close-all-buffers)	C-h f
+;; (describe-function 'eloud-mode)
+;; (describe-function 'helm-stumpwm-commands)
+;; (describe-function 'key-chord-mode)
+;; (describe-function 'mpd-next)
+;; (describe-function 'rename-buffer)
+;; (describe-key)	C-h k
+;; (dired "/home/lea")	C-x d
+;; (display-time)
+;; (ecb-activate)
+;; (ecb-minor-mode)	toggle ecb-minor-mode
+;; (eloud-mode 1)
+;; (end-of-buffer)	M->
+;; (endless/ispell-word-then-abbrev t)	M-x TAB
+;; (find-file "/home/lea/.emacs.d/init.org")
+;; (find-file "/tmp/lea_message")
+;; (finder-by-keyword)	;; C-h p
+;; (global-set-key "\C-cH" 'hyperspec-lookup)
+;; (helm-man-woman t)	manpages from within emacs
 
 ;; you've to
 ;; customize-variable
@@ -626,45 +622,45 @@ M-x shr-copy-url - copy url under the point/image
 ;; and apply it for using woman
 ;; in doom-Emacs
 
-(helm-stumpwm-commands)
-(help-with-tutorial)	C-h t
-(hyperspec-lookup "sort")	"sort" can be any command
-(imenu) - duno how it works inside a buffer
-(insert-file)	C-x i
-(ispell-change-dictionary "brasileiro")
-(ispell-word)	M-$
-(ispell-buffer)	F7
-(jabber-connect)
-(jabber-switch-to-roster-buffer)	C-x C-j C-r
-(key-chord-mode nil)
-(key-chord-mode t)
-(mingus)
-(mu4e)	C-f10
-(previous-buffer)
-(rename-buffer "learn.org")
-(kill-some-buffers)	or M-x kill-some-buffers
-(save-buffers-kill-terminal)	C-x C-c
-(shell-pop 1)	C-t
-(symbol-function 'sort-lines)	gives the function address
-(timeclock-mode-line-display)
-(w3m)
-(w3m-goto-url "https://mail.google.com")
-(where-is 'cyber-cut-line-or-region t)	C-h w
-(where-is 'find-file t)	
-(where-is 'key-chord-mode t)
-(where-is 'where-is t)	C-h w, <f1> w, <help> w (where-is)
-(where-is 'where-is)
-(which-key-mode -1)
-(which-key-mode 1) 
-(comint-dynamic-complete-filename)	M-\
-(my-complete-filename)	M-/
-(hippie-expand 1)
+;; (helm-stumpwm-commands)
+;; (help-with-tutorial)	C-h t
+;; (hyperspec-lookup "sort")	"sort" can be any command
+;; (imenu) - duno how it works inside a buffer
+;; (insert-file)	C-x i
+;; (ispell-change-dictionary "brasileiro")
+;; (ispell-word)	M-$
+;; (ispell-buffer)	F7
+;; (jabber-connect)
+;; (jabber-switch-to-roster-buffer)	C-x C-j C-r
+;; (key-chord-mode nil)
+;; (key-chord-mode t)
+;; (mingus)
+;; (mu4e)	C-f10
+;; (previous-buffer)
+;; (rename-buffer "learn.org")
+;; (kill-some-buffers)	or M-x kill-some-buffers
+;; (save-buffers-kill-terminal)	C-x C-c
+;; (shell-pop 1)	C-t
+;; (symbol-function 'sort-lines)	gives the function address
+;; (timeclock-mode-line-display)
+;; (w3m)
+;; (w3m-goto-url "https://mail.google.com")
+;; (where-is 'cyber-cut-line-or-region t)	C-h w
+;; (where-is 'find-file t)	
+;; (where-is 'key-chord-mode t)
+;; (where-is 'where-is t)	C-h w, <f1> w, <help> w (where-is)
+;; (where-is 'where-is)
+;; (which-key-mode -1)
+;; (which-key-mode 1) 
+;; (comint-dynamic-complete-filename)	M-\
+;; (my-complete-filename)	M-/
+;; (hippie-expand 1)
 
 ** Emacs file path
 
-(buffer-file-name) M-e or M-shift: (buffer-file-name) - print the full path of the current buffer/file
-Then go to the *Messages* buffer and copy it
-C-x b - also shows buffer/files paths
+;; (buffer-file-name) M-e or M-shift: (buffer-file-name) - print the full path of the current buffer/file
+;; Then go to the *Messages* buffer and copy it
+;; C-x b - also shows buffer/files paths
 
 ** Emacs completion
 
@@ -673,20 +669,20 @@ C-x b - also shows buffer/files paths
 
 ;; or
 
-(company-mode 1)
+;; (company-mode 1)
+;; 
+;; (company-files t)	; this is for completing files/folder path
 
-(company-files t)	; this is for completing files/folder path
+;; or "M-x company-files"
 
-or "M-x company-files"
+;; you can also enable:
 
-you can also enable:
+;; M-x global-company-mode
+;; alongside company-mode
+;; so that, you get lisp completion and such.
 
-M-x global-company-mode
-alongside company-mode
-so that, you get lisp completion and such.
-
-See:
-[[file:ctags-setup/][ctags]]
+;; See:
+[[file:ctags-setup/][;; ctags]]
 
 ** Emacs themes
 
@@ -694,41 +690,41 @@ See:
 
 ** spelling and bidi
 
-(flyspell-mode +1)
-(ispell-change-dictionary "brasileiro" 1)
-(ispell-change-dictionary "brasileiro" -1)
+;; (flyspell-mode +1)
+;; (ispell-change-dictionary "brasileiro" 1)
+;; (ispell-change-dictionary "brasileiro" -1)
 
-languagetool
-M-x langtool-*
+;; languagetool
+;; M-x langtool-*
 
-bidi in Emacs (bidirectional text in Emacs)
+;; bidi in Emacs (bidirectional text in Emacs)
 
-for writing biblical Hebrew, choose:
-(set-input-method 'hebrew-biblical-sil)
-(set-input-method 'portuguese-prefix)
+;; for writing biblical Hebrew, choose:
+;; (set-input-method 'hebrew-biblical-sil)
+;; (set-input-method 'portuguese-prefix)
 
-for Hebrew and Arabic
-I have two non-native functions in the
-init.el/ user.el/ config.el files
+;; for Hebrew and Arabic
+;; I have two non-native functions in the
+;; init.el/ user.el/ config.el files
 
-M-x bidi-toggle-direction
-(bidi-toggle-direction)
+;; M-x bidi-toggle-direction
+;; (bidi-toggle-direction)
 
-M-x bidi-toggle-redirection
-(bidi-toggle-redirection)
+;; M-x bidi-toggle-redirection
+;; (bidi-toggle-redirection)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; input-method
 
 ;; for US keyboard
-(set-input-method nil)
+;; (set-input-method nil)
 
 ;; for Biblical Hebrew
-(set-input-method 'hebrew-biblical-sil)
+;; (set-input-method 'hebrew-biblical-sil)
 
 ;; for Portuguese
-(set-input-method 'portuguese-prefix)
+;; (set-input-method 'portuguese-prefix)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -747,160 +743,161 @@ M-x bidi-toggle-redirection
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-Very good method for studying Biblical Hebrew
-with vowels
+;; Very good method for studying Biblical Hebrew
+;; with vowels
 
-M-x set-input-method (C-x RET C-\)
-hebrew-biblical-sil
-C-\
+;; M-x set-input-method (C-x RET C-\)
+;; hebrew-biblical-sil
+;; C-\
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ** eev-mode
 
-http://angg.twu.net/#eev
-start eev-mode with:
+;; http://angg.twu.net/#eev
+;; start eev-mode with:
 
-M-x eev-beginner
+;; M-x eev-beginner
 
-or
+;; or
 
-(eev-beginner)
-if M-x eev-beginner does not work
+;; (eev-beginner)
+;; if M-x eev-beginner does not work
 
-M-x find-find-links-links-new 
-M-2 M-e splits Emacs into left and right windows
-M-x find-emacs-keys-intro
-M-h M-h	  find-here-links
-M-0 M-e	highlights the function
-(find-enode "Moving by Defuns")
-M-x find-1stclassvideos	find eev video tutorials
-M-x find-epackage
-M-x find-epackages
-M-h M-f	on a function opens its documentation
+;; M-x find-find-links-links-new 
+;; M-2 M-e splits Emacs into left and right windows
+;; M-x find-emacs-keys-intro
+;; M-h M-h	  find-here-links
+;; M-0 M-e	highlights the function
+;; (find-enode "Moving by Defuns")
+;; M-x find-1stclassvideos	find eev video tutorials
+;; M-x find-epackage
+;; M-x find-epackages
+;; M-h M-f	on a function opens its documentation
 
-you can edit the (find-eev-quick-intro) itself
+;; you can edit the (find-eev-quick-intro) itself
 
-M-S (meta-shift-S)
+;; M-S (meta-shift-S)
 
 ;; (find-sh "dict indentured")
 
-You can add many commands to "find-sh". Like so:
+;; You can add many commands to "find-sh". Like so:
 
 ;; (find-sh "cd /tmp ; pwd ")
 
-If you want to use eev in Doom-Emacs, you have to turn Doom to Emacs normal state (C-z)
+;; If you want to use eev in Doom-Emacs, you have to turn Doom to Emacs normal state (C-z)
 
-then:
+;; then:
 
-M-x find-newbrowser-links
-(find-sh "date")
-(find-sh "diatheke -b Portuguese -f plain -k John 3:16 >> /tmp/john_3")
-(find-sh "diatheke -b ESV2011 -f plain -o s -k rom 11:16-25")
-(find-sh "diatheke -b Portuguese -f plain -k John 3:17-20 >>
-/tmp/john_3")
-(find-sh "diatheke -b ESV2011 -f plain -o s -k isa 45:18 >>/tmp/cross_refs.org")
- (find-sh "diatheke -b ESV2011 -f plain -o s -k isa 14:12-32 >>/tmp/cross_refs.org")
+;; M-x find-newbrowser-links
+;; (find-sh "date")
+;; (find-sh "diatheke -b Portuguese -f plain -k John 3:16 >> /tmp/john_3")
+;; (find-sh "diatheke -b ESV2011 -f plain -o s -k rom 11:16-25")
+;; (find-sh "diatheke -b Portuguese -f plain -k John 3:17-20 >>
+;; /tmp/john_3")
+;; (find-sh "diatheke -b ESV2011 -f plain -o s -k isa 45:18 >>/tmp/cross_refs.org")
+;;  (find-sh "diatheke -b ESV2011 -f plain -o s -k isa 14:12-32 >>/tmp/cross_refs.org")
 
-(find-sh "diatheke -b KJVA -f plain -k john 3:16")
-(find-sh "diatheke -b TR  -f plain -o a -k john 3:16")
+;; (find-sh "diatheke -b KJVA -f plain -k john 3:16")
+;; (find-sh "diatheke -b TR  -f plain -o a -k john 3:16")
 
-(find-fline "/tmp/")
-(find-efunctiondescr 'find-file)
-(find-node "(emacs)Lisp Eval")
-(find-node "(emacs)org-mode")
-M-x find-orgmode
-(find-node "(emacs)elisp")
-(find-node "(org)elisp")
+;; (find-fline "/tmp/")
+;; (find-efunctiondescr 'find-file)
+;; (find-node "(emacs)Lisp Eval")
+;; (find-node "(emacs)org-mode")
+;; M-x find-orgmode
+;; (find-node "(emacs)elisp")
+;; (find-node "(org)elisp")
 
-(find-node
-"(org)top")
+;; (find-node
+;; "(org)top")
 
-(find-enode "Rmail")
-(find-enode "tramp")
-(find-efunction 'find-file)
-(find-efunction-links 'org-mode)
+;; (find-enode "Rmail")
+;; (find-enode "tramp")
+;; (find-efunction 'find-file)
+;; (find-efunction-links 'org-mode)
 
-(find-red-star-links)
-M-x ee-use-red-stars
-M-x ee-use-red-bullets
-M-x eeit (ee-insert-test-block)
+;; (find-red-star-links)
+;; M-x ee-use-red-stars
+;; M-x ee-use-red-bullets
+;; M-x eeit (ee-insert-test-block)
 
-M-x find-org-intro
+;; M-x find-org-intro
 
-open eshell, got to the video dir,
-copy the video file name, call:
-M-x ^find-video
-M-x ^find-mpv-video
-and paste the video name, then RET
+;; open eshell, got to the video dir,
+;; copy the video file name, call:
+;; M-x ^find-video
+;; M-x ^find-mpv-video
+;; and paste the video name, then RET
 
-(find-here-links)
+;; (find-here-links)
 
-M-x find-* (has got a pletora of nicities)
-M-x find-wconfig-*
-M-x find-library - finds configuration files (*.el)
-M-x find-file-other-tab - opens a file in another tab 
-M-x find-wconfig-browser-links
-M-x find-youtubedl-links
-;; you should only use the hash video part with
-;; this function. The hash part comes after the "v" tag
-;; (emms-play-url "https://www.youtube.com/watch?v=h0ffIJ7ZO4U")
-;; e.g.: h0ffIJ7ZO4U
+;; M-x find-* (has got a pletora of nicities)
+;; M-x find-wconfig-*
+;; M-x find-library - finds configuration files (*.el)
+;; M-x find-file-other-tab - opens a file in another tab 
+;; M-x find-wconfig-browser-links
+;; M-x find-youtubedl-links
+;; ;; you should only use the hash video part with
+;; ;; this function. The hash part comes after the "v" tag
+;; ;; (emms-play-url "https://www.youtube.com/watch?v=h0ffIJ7ZO4U")
+;; ;; e.g.: h0ffIJ7ZO4U
 
-(find-audiovideo-intro "6. Youtube-dl")
+;; (find-audiovideo-intro "6. Youtube-dl")
 
-How to download videos with
-(find-youtubedl-links ...)
+;; How to download videos with
+;; (find-youtubedl-links ...)
 
-You have to put only the hash part to the function and not the whole YT/Invidious address
+;; You have to put only the hash part to the function and not the whole YT/Invidious address
 
-The *hash* is the part after "...v="
-and you can get it when copying the link through:
-Watch on YouTube (Embed)
+;; The *hash* is the part after "...v="
+;; and you can get it when copying the link through:
+;; Watch on YouTube (Embed)
 
-e.g.:
-(find-youtubedl-links "/tmp/" nil "JJzHMX9EkaU")
+;; e.g.:
+;; (find-youtubedl-links "/tmp/" nil "JJzHMX9EkaU")
 
-for colors code, do:
-M-x find-ecolors
-for finding emacs information, do:
-M-x find-eapropos (type eg. telega)
-M-x find-grep-dired
-M-x find-eejump-intro
+;; for colors code, do:
+;; M-x find-ecolors
+;; for finding emacs information, do:
+;; M-x find-eapropos (type eg. telega)
+;; M-x find-grep-dired
+;; M-x find-eejump-intro
 
-Refining links with eev
+;; Refining links with eev
 
-1. Mark, select and copy the place where you want your bookmark to be 
-2. M-h M-3	creates 3 windows
-3. M-h M-2	duplicate-this-line
-4. M-h M-y	ee-yank-pos-spacing
-5. M-h M-w	copy-this-line
-6. M-y	yank-from-the-key-ring
+;; 1. Mark, select and copy the place where you want your bookmark to be 
+;; 2. M-h M-3	creates 3 windows
+;; 3. M-h M-2	duplicate-this-line
+;; 4. M-h M-y	ee-yank-pos-spacing
+;; 5. M-h M-w	copy-this-line
+;; 6. M-y	yank-from-the-key-ring
 
-Neat!!!
+;; Neat!!!
 
-Highlighting a sexp - eev way
-`M-0 M-e' and `M-0 M-E' highlight the sexp before point...
+;; Highlighting a sexp - eev way
+;; `M-0 M-e' and `M-0 M-E' highlight the sexp before point...
 
-C-x C-f M-n	open the file path under your cursor.
+;; C-x C-f M-n	open the file path under your cursor.
 
-My notes about Doom are here:
-http://angg.twu.net/e/doom.e.html
-Look for "workspaces"
+;; My notes about Doom are here:
+;; http://angg.twu.net/e/doom.e.html
+;; Look for "workspaces"
 
-get emacs normal keybindings
-(evil-emacs-state t)	C-z
+;; get emacs normal keybindings
+;; (evil-emacs-state t)	C-z
 
-C-& occur
-occur-edit-mode
+;; C-& occur
+;; occur-edit-mode
 
-;; Adapted from: (find-eev "eev-brxxx.el" "code-brxxxs")
+;; ;; Adapted from: (find-eev "eev-brxxx.el" "code-brxxxs")
 
-(defun find-waterfox    (url) (find-bgprocess `("waterfox"    ,url)))
-(defun find-qutebrowser (url) (find-bgprocess `("qutebrowser" ,url)))
+;; (defun find-waterfox    (url) (find-bgprocess `("waterfox"    ,url)))
+;; (defun find-qutebrowser (url) (find-bgprocess `("qutebrowser" ,url)))
 
-(code-brurl 'find-waterfox    :remote 'brwf  :local 'brwfl  :dired 'brwfd)
-(code-brurl 'find-qutebrowser :remote 'brqb  :local 'brqbl  :dired 'brqbd)
+;; (code-brurl 'find-waterfox    :remote 'brwf  :local 'brwfl  :dired 'brwfd)
+;; (code-brurl 'find-qutebrowser :remote 'brqb  :local 'brqbl  :dired 'brqbd)
+
 
 ;; Tests:
 ;; (find-waterfox    "http://www.lua.org/start.html")
@@ -925,34 +922,35 @@ occur-edit-mode
 
 ;; turn pdf into text with eev
 
-(find-pdf-text "~/Documents/e-books/bash_language/linux_shell_scripting_cookbook.pdf")
+;; (find-pdf-text "~/Documents/e-books/bash_language/linux_shell_scripting_cookbook.pdf")
 
 ;; http://angg.twu.net/eev-intros/find-pdf-like-intro.html
 
-(find-pdf-page "~/Coetzee99.pdf")
-(find-pdf-text "~/Coetzee99.pdf")
+;; (find-pdf-page "~/Coetzee99.pdf")
+;; (find-pdf-text "~/Coetzee99.pdf")
 
-(find-pdf-page "~/Documents/e-books/programming_general/introduction_to_Emacs_lisp.pdf")
+;; (find-pdf-page "~/Documents/e-books/programming_general/introduction_to_Emacs_lisp.pdf")
 
-(find-pdf-text "~/Documents/e-books/programming_general/introduction_to_Emacs_lisp.pdf")
+;; (find-pdf-text "~/Documents/e-books/programming_general/introduction_to_Emacs_lisp.pdf")
 
-you can open a pdf file in emacs; open vterm to get the correct directory where the pdf is; issue: "pwd| pbcopy"; open the =scratch= buffer; paste the pdf path; call "M-x company-files"; call "M-x find-pdf-links"; choose how to show the pdf-document
+;; you can open a pdf file in emacs; open vterm to get the correct directory where the pdf is; issue: "pwd| pbcopy"; open the =scratch= buffer; paste the pdf path; call "M-x company-files"; call "M-x find-pdf-links"; choose how to show the pdf-document
 
 ** eewrap
 
-M-x eewrap-*
-M-x find-eewrap-links
-M-x find-ee*
+;; M-x eewrap-*
+;; M-x find-eewrap-links
+;; M-x find-ee*
 
-M-x find-ekeydescr	(C-h k)
+;; M-x find-ekeydescr	(C-h k)
+;; 
+;; M-h M-e	find-extra-file-links
+;; You have to access files from Emacs dired
 
-M-h M-e	find-extra-file-links
-You have to access files from Emacs dired
 
 ** org-escripts from eev
 
-- You can learn org-mode (orgmode) through this:
-- (find-fline "/home/vagner/org/org-escripts/org.e")
+;; You can learn org-mode (orgmode) through this:
+;; (find-fline "/home/vagner/org/org-escripts/org.e")
 
 ** orgmode-manual
 
@@ -961,12 +959,12 @@ You have to access files from Emacs dired
   
 ** eww
 
-- When accessing an URL with eww, hit:
-- eww-readable	R
+;; When accessing an URL with eww, hit:
+;; eww-readable	R
 
-- turn an eww article into an org format text
-- then, open an org file and past it there
-- M-x org-eww-copy-for-org-mode
+;; turn an eww article into an org format text
+;; then, open an org file and past it there
+;; M-x org-eww-copy-for-org-mode
   
 ** eros-mode
 
@@ -974,40 +972,41 @@ You have to access files from Emacs dired
 ;; (eros-mode -1)
 ;; eros-mode
 
-(eval '(+ 5 3))
-(+ 1 2)
-(find-file "/home/lea/lab_test/learn_emacs.org")
-(find-file "/tmp/john_3")
-(dired "/tmp/john_3")
-(dired "/home/lea")
-(find-sh "espeak -vpt 'Escreva aqui'")
-(find-sh "echo 'levite' | sdcv" )
-(find-sh "echo 'levite' | sdcv | espeak -vfr" )
+;; (eval '(+ 5 3))
+;; (+ 1 2)
+;; (find-file "/home/lea/lab_test/learn_emacs.org")
+;; (find-file "/tmp/john_3")
+;; (dired "/tmp/john_3")
+;; (dired "/home/lea")
+;; (find-sh "espeak -vpt 'Escreva aqui'")
+;; (find-sh "echo 'levite' | sdcv" )
+;; (find-sh "echo 'levite' | sdcv | espeak -vfr" )
 
 ** greader
-greader keybindings only  works in Emacs normal-state
 
-M-x greader-read
-M-x greader-inc-rate
-M-x greader-dec-rate
-M-x greader-set-language
-M-x greader-continuous-mode
+;; greader keybindings only  works in Emacs normal-state
+
+;; M-x greader-read
+;; M-x greader-inc-rate
+;; M-x greader-dec-rate
+;; M-x greader-set-language
+;; M-x greader-continuous-mode
 
 ;; Note: use greader-read with
 ;; M-n
 ;; M-p
 ;; to roll down and up the text
 
-M-x whisper-run	for talking and recording in Emacs
-M-x whisper-file	transcribe or translate local file in Emacs
+;; M-x whisper-run	for talking and recording in Emacs
+;; M-x whisper-file	transcribe or translate local file in Emacs
 
-(helm-mini)
-(enlarge-font 1)
-(electric-pair-mode 1)
-(flyspell-mode 1)
-(helm-stumpwm-commands)
-(insert-char)	Alt-x RET insert-char for unicode char
-(replace-regexp "vagner" "lea")	this will replace all "vagner" strings to "lea"
+;; (helm-mini)
+;; (enlarge-font 1)
+;; (electric-pair-mode 1)
+;; (flyspell-mode 1)
+;; (helm-stumpwm-commands)
+;; (insert-char)	Alt-x RET insert-char for unicode char
+;; (replace-regexp "vagner" "lea")	this will replace all "vagner" strings to "lea"
 
 ;; from next line down - note the "." dot means a single character
 
@@ -1030,42 +1029,42 @@ M-x whisper-file	transcribe or translate local file in Emacs
 
 ** mplayer-mode
 
-It creates a buffer called
-*mplayer*
-then, you can control it with:
-M-x mplayer-*
-M-x mplayer-find
-M-x mplayer-find-file-at-point
-or:
-(mplayer-mode)
-(new-frame)
+;; It creates a buffer called
+;; *mplayer*
+;; then, you can control it with:
+;; M-x mplayer-*
+;; M-x mplayer-find
+;; M-x mplayer-find-file-at-point
+;; or:
+;; (mplayer-mode)
+;; (new-frame)
 
-Use more frames than splitting windows
+;; Use more frames than splitting windows
 
-(make-frame-command)   C-x 5 2
-(other-frame ARG)      C-x 5 o
+;; (make-frame-command)   C-x 5 2
+;; (other-frame ARG)      C-x 5 o
 
 ;; (browse-url          "https://www.emacswiki.org/emacs/WindowsAndFrames")
 ;; (browse-url-firefox  "https://www.emacswiki.org/emacs/WindowsAndFrames")
 ;; (browse-url-chromium "https://www.emacswiki.org/emacs/WindowsAndFrames")
 
-(mplayer-toggle-pause)
-(mplayer-toggle-osd)
+;; (mplayer-toggle-pause)
+;; (mplayer-toggle-osd)
 
 ;; eval this and the current video position
 ;; will be added here
 ;; (mplayer-insert-position)
 
 ;; Then you can use:
-(mplayer-insert-position(6.8))
-(mplayer-seek-position '0)  ;; seconds
-(mplayer-seek-position '124)  ;; seconds
+;; (mplayer-insert-position(6.8))
+;; (mplayer-seek-position '0)  ;; seconds
+;; (mplayer-seek-position '124)  ;; seconds
 
 ;; She dives in the swimming pool
-(mplayer-insert-position)
-(mplayer-find-file "file.mp4")
+;; (mplayer-insert-position)
+;; (mplayer-find-file "file.mp4")
 
-e.g.:
+;; e.g.:
 
 ;; start like so:
 ;; (mplayer-find-file "/home/vagner/Videos/oblivion/oblivion_M83_SS-film-scenes.webm")
@@ -1101,9 +1100,9 @@ e.g.:
 
 ** mpv
 
-(use-package mpv
- :ensure t
- :defer t)
+;; (use-package mpv
+;;  :ensure t
+;;  :defer t)
 
 
 M-! then "mpv videoURL &"
@@ -1128,25 +1127,26 @@ M-! then "mpv videoURL &"
 ;; (find-fline "~/Videos")
 
 ;; control the audios and videos with mpv:
-(* HH:MM:SS 60) -> you can calculate the total seconds of a given
-(* 14.7 60) -> calculate the ammount of seconds of an video
-(mpv-play "~/snarf")
-(mpv-pause) -> toggle-pause-play
-(mpv-seek 300)
-(mpv-seek 100)
-(mpv-volume-set 70)
-(mpv-volume-set 40)
-(mpv-volume-set 80)
-(mpv-insert-playback-position)
-(mpv-seek '0:07:23)
 
-et.al...
+;; (* HH:MM:SS 60) -> you can calculate the total seconds of a given
+;; (* 14.7 60) -> calculate the ammount of seconds of an video
+;; (mpv-play "~/snarf")
+;; (mpv-pause) -> toggle-pause-play
+;; (mpv-seek 300)
+;; (mpv-seek 100)
+;; (mpv-volume-set 70)
+;; (mpv-volume-set 40)
+;; (mpv-volume-set 80)
+;; (mpv-insert-playback-position)
+;; (mpv-seek '0:07:23)
 
-See also:
-M-x find-eev-video-links
-e.g.
-(find-video "~/Videos/enigma/monster_killer.webm" $s)
-$s=Seconds
+;; et.al...
+
+;; See also:
+;; M-x find-eev-video-links
+;; e.g.
+;; (find-video "~/Videos/enigma/monster_killer.webm" $s)
+;; $s=Seconds
 
 ;; mpv start timing
 ;; Does not work on streams
@@ -1174,31 +1174,28 @@ $s=Seconds
 
 ** mpv screenshots
 
-s	Take a screenshot.
+;; s	Take a screenshot.
 
-S	Take  a screenshot,  without  subtitles. (Whether  this
-          works depends on VO driver support.)
+;; S	Take  a screenshot,  without  subtitles. (Whether  this
+;;           works depends on VO driver support.)
 
-Ctrl s	Take  a  screenshot,  as  the  window  shows  it  (with
-          subtitles, OSD, and scaled video).
+;; Ctrl s	Take  a  screenshot,  as  the  window  shows  it  (with
+;;           subtitles, OSD, and scaled video).
 
-##+begin_src emacs-lisp :tangle yes
+;; (mplayer-insert-position)(73.7)
 
-(mplayer-insert-position)(73.7)
+;; If you want to get the URL of the current playing video, do:
 
-##+end_src
+;; ps -x | grep mpv |
+;; or
+;; ps -x | grep mpv | pbcopy
+;; then:
+;; pbpaste
+;; or
+;; ps -x |grep mpv | tee a /tmp/mpv_urls.txt
+;; or
+;; ps -x | grep mpv >> /tmp/mpv_urls
 
-- If you want to get the URL of the current playing video, do:
-
-ps -x | grep mpv |
-or
-ps -x | grep mpv | pbcopy
-then:
-pbpaste
-or
-ps -x |grep mpv | tee a /tmp/mpv_urls.txt
-or
-ps -x | grep mpv >> /tmp/mpv_urls
 
 ** TODO vlc
 
@@ -1207,50 +1204,51 @@ ps -x | grep mpv >> /tmp/mpv_urls
 
 ** mbc-hehi
 
-(set-face-foreground 'minibuffer-prompt "yellow")
-(set-face-attribute 'helm-selection nil 
-:background "red"
-:foreground "white")
+;; (set-face-foreground 'minibuffer-prompt "yellow")
+;; (set-face-attribute 'helm-selection nil 
+;; :background "red"
+;; :foreground "white")
 
 ** epresent
-(epresent-run)
-(epresent-quit)
-(epresent-edit-text)
+
+;; (epresent-run)
+;; (epresent-quit)
+;; (epresent-edit-text)
 
 ** diatheke
 
-# Bible teaching workflow
-# you should load "diathekeAliases.sh"
-# ~/bin/diathekeAliases.sh
-# See all aliases in terminal
-# diatheke + TAB
+;; Bible teaching workflow
+;; you should load "diathekeAliases.sh"
+;; ~/bin/diathekeAliases.sh
+;; See all aliases in terminal
+;; diatheke + TAB
 
-# also make use of:
-# "bible, biblehub, eev, grl, quickbible"
-# "Emacs dtk, and Emacs diatheke"
+;; also make use of:
+;; "bible, biblehub, eev, grl, quickbible"
+;; "Emacs dtk, and Emacs diatheke"
 
-(diatheke-set-bible)
-(diatheke-insert-passage)
-(diatheke-phrase-search "Jesus love")
-#set the Bible and its options like so:
-#in mlterm
+;; (diatheke-set-bible)
+;; (diatheke-insert-passage)
+;; (diatheke-phrase-search "Jesus love")
+;; set the Bible and its options like so:
+;; in mlterm
 
-(setq diatheke-bible "ESV2011 -f plain ")
+;; (setq diatheke-bible "ESV2011 -f plain ")
 
-cross references only works in ESV2011
+;; cross references only works in ESV2011
 
 ** Bibles
 
-(setq diatheke-bible "PorAR -f plain ")
-(setq diatheke-bible "SpaRV -f plain ")
-(setq diatheke-bible "KJV -f plain ")
-(setq diatheke-bible "KJVA -f plain ")
-(setq diatheke-bible "KJVA -f plain -o n ")
-(setq diatheke-bible "ESV2011 -f plain -o s ")
-(setq diatheke-bible "MKJV -f plain ")
-(setq diatheke-bible "ISBE -f plain ")
+;; (setq diatheke-bible "PorAR -f plain ")
+;; (setq diatheke-bible "SpaRV -f plain ")
+;; (setq diatheke-bible "KJV -f plain ")
+;; (setq diatheke-bible "KJVA -f plain ")
+;; (setq diatheke-bible "KJVA -f plain -o n ")
+;; (setq diatheke-bible "ESV2011 -f plain -o s ")
+;; (setq diatheke-bible "MKJV -f plain ")
+;; (setq diatheke-bible "ISBE -f plain ")
 
-;; for searching text through the Bible
+;; ;; for searching text through the Bible
 ;; You can use:
 ;; (helm-do-grep-ag) in Emacs
 ;; you can use two or more strings for searching
@@ -1263,329 +1261,332 @@ cross references only works in ESV2011
 
 ** commentaries
 
-(setq diatheke-bible "Torrey -f plain ")
-(setq diatheke-bible "TCR -f plain ")
-(setq diatheke-bible "Barnes -f plain ")
-(setq diatheke-bible "Gil -f plain ")
+;; (setq diatheke-bible "Torrey -f plain ")
+;; (setq diatheke-bible "TCR -f plain ")
+;; (setq diatheke-bible "Barnes -f plain ")
+;; (setq diatheke-bible "Gil -f plain ")
 
-generating complete Bibles in terminal:
+;; generating complete Bibles in terminal:
 
-diatheke -b PorAR -f plain -k gen-rev > PorAR
-diatheke -b PorRecebida -f plain -k gen-rev > PorRecebida
-diatheke -b KJVA -f plain -k gen-rev > KJVA
-diatheke -b ESV2011 -f plain -k gen-rev > ESV2011
-diatheke -b system  -k modulelist > modulelist
+;; diatheke -b PorAR -f plain -k gen-rev > PorAR
+;; diatheke -b PorRecebida -f plain -k gen-rev > PorRecebida
+;; diatheke -b KJVA -f plain -k gen-rev > KJVA
+;; diatheke -b ESV2011 -f plain -k gen-rev > ESV2011
+;; diatheke -b system  -k modulelist > modulelist
 
 ** dictionaries and lexicons
 
-issue,
+;; issue,
 
-diatheke -b system -k modulelist
+;; diatheke -b system -k modulelist
 
-in vterm to get the book modulelist abbreviations
+;; in vterm to get the book modulelist abbreviations
 
-(setq diatheke-bible "WebstersDict -f plain ")
-(setq diatheke-bible "KJVD -f plain ")
-(setq diatheke-bible "AmTract -f plain ")
-(setq diatheke-Bible "HebModern -o v ")
-(setq diatheke-Bible "HebDelitzsch -o v")
+;; (setq diatheke-bible "WebstersDict -f plain ")
+;; (setq diatheke-bible "KJVD -f plain ")
+;; (setq diatheke-bible "AmTract -f plain ")
+;; (setq diatheke-Bible "HebModern -o v ")
+;; (setq diatheke-Bible "HebDelitzsch -o v")
 
-M-x step-Bible
+;; M-x step-Bible
 
-Emacs sword-to-org package
-- https://github.com/alphapapa/sword-to-org
+;; Emacs sword-to-org package
+;; https://github.com/alphapapa/sword-to-org
 
-M-x sword-to-org-insert-outline
-M-x sword-to-org-insert-passage
+;; M-x sword-to-org-insert-outline
+;; M-x sword-to-org-insert-passage
 
-You can also use:
+;; You can also use:
 
-M-x google-translate-at-point
-You can translate a single word, a selected phrase
-or the entire buffer
+;; M-x google-translate-at-point
+;; You can translate a single word, a selected phrase
+;; or the entire buffer
 
-It is bound to C-c t.
+;; It is bound to C-c t.
 
-you can use "trans -b $il:$ol" through:
+;; you can use "trans -b $il:$ol" through:
 
-M-!	shell-command in a separated buffer
-C-u M-!	shell-command output inside the buffer/file
+;; M-!	shell-command in a separated buffer
+;; C-u M-!	shell-command output inside the buffer/file
 
-M-|	command on region
-C-u M-|	command on region inside the buffer/file
+;; M-|	command on region
+;; C-u M-|	command on region inside the buffer/file
 
-for learning languages
+;; for learning languages
 
-Write a word in, say, *scratch*, highlight it and call:
-M-x dictionary-search
-Then hit "h" - help
-M-x dictionary - then choose the one you want to use
-    e.g. "fd-fra-por" or "fd-fra-spa"
+;; Write a word in, say, *scratch*, highlight it and call:
+;; M-x dictionary-search
+;; Then hit "h" - help
+;; M-x dictionary - then choose the one you want to use
+;;     e.g. "fd-fra-por" or "fd-fra-spa"
 
-M-x youdao-dictionary-*
+;; M-x youdao-dictionary-*
 
-M-x helm-wordnet
-M-x helm-wordnut-search
-M-x wordnut-search
-M-x wordnut-lookup-current-word
-M-x counsel-Linux-app - then wnb
-In the terminal:
-trans -I
-trans -E
+;; M-x helm-wordnet
+;; M-x helm-wordnut-search
+;; M-x wordnut-search
+;; M-x wordnut-lookup-current-word
+;; M-x counsel-Linux-app - then wnb
+;; In the terminal:
+;; trans -I
+;; trans -E
 
-Also you have got:
+;; Also you have got:
 
-M-x youdao-dictionary-*
-It can speak using a beautiful voice
+;; M-x youdao-dictionary-*
+;; It can speak using a beautiful voice
 
 ** More on Bibles
 
-Note: before sending a Hebrew text to a telega channel you have to issue:
+;; Note: before sending a Hebrew text to a telega channel you have to issue:
 
-M-x cypher/bidi-reordering-toggle
+;; M-x cypher/bidi-reordering-toggle
 
-(setq diatheke-bible "PorAR -f plain ")
-(setq diatheke-bible "grcSBL2010eb -f plain")
-(setq diatheke-bible "WLC -f plain -o v")
-(setq diatheke-bible "TR -f plain -o a")
-(setq diatheke-bible "TR -f plain")
-(setq diatheke-bible "WLC -f plain")
-(setq diatheke-bible "PorRecebida -f plain")
+;; (setq diatheke-bible "PorAR -f plain ")
+;; (setq diatheke-bible "grcSBL2010eb -f plain")
+;; (setq diatheke-bible "WLC -f plain -o v")
+;; (setq diatheke-bible "TR -f plain -o a")
+;; (setq diatheke-bible "TR -f plain")
+;; (setq diatheke-bible "WLC -f plain")
+;; (setq diatheke-bible "PorRecebida -f plain")
 
-- in normal terminal - notice -o b
+;; in normal terminal - notice -o b
 
-(setq diatheke-bible "WLC -f plain -o vb")
-then issue:
-M-x diatheke-phrase-search
-and type an English name or Strongs' code
+;; (setq diatheke-bible "WLC -f plain -o vb")
+;; then issue:
+;; M-x diatheke-phrase-search
+;; and type an English name or Strongs' code
 
-(setq diatheke-bible "StrongsHebrew -f plain ")
-(setq diatheke-bible "StrongsGreek -f plain ")
-then issue:
-M-x diatheke-phrase-search
-and type an English name or Strongs' code
+;; (setq diatheke-bible "StrongsHebrew -f plain ")
+;; (setq diatheke-bible "StrongsGreek -f plain ")
+;; then issue:
+;; M-x diatheke-phrase-search
+;; and type an English name or Strongs' code
 
-M-x diatheke-insert-passage
-then issue: a Bible reference - insert that reference in-line
+;; M-x diatheke-insert-passage
+;; then issue: a Bible reference - insert that reference in-line
 
-M-x diatheke-insert-passage
-then issue: no reference - inserts diatheke help-manual page in-line
+;; M-x diatheke-insert-passage
+;; then issue: no reference - inserts diatheke help-manual page in-line
 
-M-x helm-do-grep-ag - good for searching Bible references inside and link org files to each other "~/bin/quickbible"
+;; M-x helm-do-grep-ag - good for searching Bible references inside and link org files to each other "~/bin/quickbible"
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ** chatgpt-shell on Emacs
 
-M-n or M-p circle through chatgpt prompts
-shell-maker-save-session-transcript
-chatgpt-shell-restore-session-from-transcript
+;; M-n or M-p circle through chatgpt prompts
+;; shell-maker-save-session-transcript
+;; chatgpt-shell-restore-session-from-transcript
 
 ;; (find-fline "/media/sdb1-500GB_bak/home/vagner/Documents/programming_courses/chatgpt-shell/awesome-chatgpt-prompts")
 
-or:
+;; or:
 
 ;; (find-fline "/home/lea/Documents/programming_courses/chatgpt-shell/awesome-chatgpt-prompts")
 
-
 ;; (find-file "/home/vagner/org/deft-notes/2023-04-14-0619 chatgpt_prompts.org")
 
-or:
+;; or:
 
 ;; (find-file "/home/lea/org/deft-notes/2023-04-14-0619 chatgpt_prompts.org")
 
 ** dtk
 
-you can also use dtk with diatheke
+;; you can also use dtk with diatheke
 
-dtk-select-module
-dtk-bible -> C-c B
+;; dtk-select-module
+;; dtk-bible -> C-c B
 
 ** sword-to-org
-emacs bible package
-M-x sword-to-org 
+
+;; emacs bible package
+;; M-x sword-to-org 
 
 ** bible-mode
-M-x f /tmp/foo.txt
-M-x bible-open
-M-x bible-insert
+
+;; M-x f /tmp/foo.txt
+;; M-x bible-open
+;; M-x bible-insert
 
 ** sdcv - stardict console
 
-(sdcv-mode)
-(describe-function) or C-h f  
-i	insert word et.al
-(sdcv-search-input "love")
-(sdcv-search-input+ "love")
+;; (sdcv-mode)
+;; (describe-function) or C-h f  
+;; i	insert word et.al
+;; (sdcv-search-input "love")
+;; (sdcv-search-input+ "love")
 
 ** regex
 
-M-x helm-regexp
-M-x regexp-builder
-M-x ripgrep-regexp
-
-M-x isearch-forward-regexp
-M-x isearch-backward-regexp
+;; M-x helm-regexp
+;; M-x regexp-builder
+;; M-x ripgrep-regexp
+ 
+;; M-x isearch-forward-regexp
+;; M-x isearch-backward-regexp
 
 ** evil
 
-M-x repeat "."
+;; M-x repeat "."
 
-- Emacs way
-M-x repeat "M-x z"
+;; Emacs way
+;; M-x repeat "M-x z"
 
 ** crux commads
-M-x crux-*
+
+;; M-x crux-*
 
 ** emms
 
-M-x emms-play-dired
-M-x emms-play-directory
-M-x emms-play-directory-tree
+;; M-x emms-play-dired
+;; M-x emms-play-directory
+;; M-x emms-play-directory-tree
 
-M-x emms-player-mpd-connect
-M-x emms-player-mpd-play
-M-x emms-player-mpd-pause
-M-x emms-player-mpd-previous
-M-x emms-player-mpd-show
+;; M-x emms-player-mpd-connect
+;; M-x emms-player-mpd-play
+;; M-x emms-player-mpd-pause
+;; M-x emms-player-mpd-previous
+;; M-x emms-player-mpd-show
 
-Then access the *Media* buffer
+;; Then access the *Media* buffer
 
-M-x emms-play-directory-tree
-M-x emms-playlist-mode-go
-M-x emms-player-simple-mpv-volume-to
+;; M-x emms-play-directory-tree
+;; M-x emms-playlist-mode-go
+;; M-x emms-player-simple-mpv-volume-to
 
-(emms-play-file "/tmp/27-Psa_009.mp3")
+;; (emms-play-file "/tmp/27-Psa_009.mp3")
 
-Dire Straits - Sultans Of Swing
+;; Dire Straits - Sultans Of Swing
 
-(emms-play-url "https://www.youtube.com/watch?v=h0ffIJ7ZO4U")
-(emms-play-url "https://youtube.com/watch?v=-yiAukSfVAc")
+;; (emms-play-url "https://www.youtube.com/watch?v=h0ffIJ7ZO4U")
+;; (emms-play-url "https://youtube.com/watch?v=-yiAukSfVAc")
 
-M-x evil-scroll*
+;; M-x evil-scroll*
+
 
 ** mingus
 
-M-x mingus-*
-M-x mpd-adjust-volume
+;; M-x mingus-*
+;; M-x mpd-adjust-volume
 
-#eaf
-M-x eaf-generate-keymap-doc
-M-x eaf-enable-evil-integration
-eaf-search-it -> then hit "f" for links inside the page
-M-i -> go back in history
-r -> refresh page
-eaf pdf
-navigate with "p" and enter the page number
-C-s - for search
-f - for showing links in the page
-x - close the document
-eaf-open
-C-c C-l - create a link
-C-c C-o - open link
-org-mark-ring-goto -> toggle between links
-eaf-open - then video-demo.mkv - for opening videos
-eaf-open - camera - p for taking a screenshot
-you can use vim-keybindings for controlling the video
+;; eaf
+;; M-x eaf-generate-keymap-doc
+;; M-x eaf-enable-evil-integration
+;; eaf-search-it -> then hit "f" for links inside the page
+;; M-i -> go back in history
+;; r -> refresh page
+;; eaf pdf
+;; navigate with "p" and enter the page number
+;; C-s - for search
+;; f - for showing links in the page
+;; x - close the document
+;; eaf-open
+;; C-c C-l - create a link
+;; C-c C-o - open link
+;; org-mark-ring-goto -> toggle between links
+;; eaf-open - then video-demo.mkv - for opening videos
+;; eaf-open - camera - p for taking a screenshot
+;; you can use vim-keybindings for controlling the video
+
 
 ** w3m
 
-Just type the string will want to search in, say, *scratch* buffer,
-select it and call:
-M-x w3m-search "C-w 3" in doom-Emacs
+;; Just type the string will want to search in, say, *scratch* buffer,
+;; select it and call:
+;; M-x w3m-search "C-w 3" in doom-Emacs
 
-(setq w3m-default-display-inline-images t)
-(setq w3m-default-display-inline-images nil)
-(setq w3m-toggle-inline-images-permanently t)
-(setq w3m-turnoff-inline-images t)
+;; (setq w3m-default-display-inline-images t)
+;; (setq w3m-default-display-inline-images nil)
+;; (setq w3m-toggle-inline-images-permanently t)
+;; (setq w3m-turnoff-inline-images t)
 
-M-x image-toggle-display
+;; M-x image-toggle-display
 
-If you are in a URL with video links, do:
-M-x empv-play-video
-M-x empv-toggle-video
+;; If you are in a URL with video links, do:
+;; M-x empv-play-video
+;; M-x empv-toggle-video
 
-#opening a local html file in a GUI browser
+;; opening a local html file in a GUI browser
 
-+ for org-reveal presentation
-+ (browse-url-xdg-open "file:///tmp/tess.html")
-+ or:
+;; + for org-reveal presentation
+;; + (browse-url-xdg-open "file:///tmp/tess.html")
+;; + or:
 
-##+BEGIN_SRC sh :result output
+;; librewolf /tmp/tess.html &
 
-librewolf /tmp/tess.html &
-
-##+END_SRC
-
-+ open a local ".html" file
-+ with "M-x browse-url-xdg-open"
-+ URL: file:///tmp/test.html
-+ Then it will open in a GUI browser
-+ firefox, librewolf, google, et.al.
-+ if you have cvim installed, you can hit "q" to see the keywords on the page
+;; + open a local ".html" file
+;; + with "M-x browse-url-xdg-open"
+;; + URL: file:///tmp/test.html
+;; + Then it will open in a GUI browser
+;; + firefox, librewolf, google, et.al.
+;; + if you have cvim installed, you can hit "q" to see the keywords on the page
 
 ** ytel - youtube
 
-M-x ytel-choose-instance
-M-x ytel-search
-M-x ytel-watch
-M-x empv-youtube
-M-x empv-play-video
-M-x empv-toggle-video
+;; M-x ytel-choose-instance
+;; M-x ytel-search
+;; M-x ytel-watch
+;; M-x empv-youtube
+;; M-x empv-play-video
+;; M-x empv-toggle-video
 
 ** convert a youtube video into screenshots with subtitles
 
-yt-to-webpage.pl project-name "videoURL"
-- https://github.com/obra/Youtube2Webpage
+;; yt-to-webpage.pl project-name "videoURL"
+;; https://github.com/obra/Youtube2Webpage
 
-Play a video at specific time
-(find-sh "mpv --start=33:00 https://www.youtube.com/watch?v=GK3fij-D1G8")
-time 33"
+;; Play a video at specific time
+;; (find-sh "mpv --start=33:00 https://www.youtube.com/watch?v=GK3fij-D1G8")
+;; time 33"
 
 ** dpaste - webpaste Emacs
 
- webpaste a buffer or its region to
- an internet repo to last 1 day
- and send its URL to whomever
+;; webpaste a buffer or its region to
+;; an internet repo to last 1 day
+;; and send its URL to whomever
 
- you can register to dpaste on github
- see the help session
+;; you can register to dpaste on github
+;; see the help session
 
-M-x 0x0-*
-M-x dpaste
-M-x webpaste-paste-buffer
-M-x webpaste-paste-buffer-or-region
-M-x webpaste-paste-buffer-or-region
-M-x webpaste-paste-region
-pastebinit -> (simlink -> glueDebian)
-pastebinit	for sending local texts online, through the terminal 
-pastebinit | pbcopy	for sending local texts online, through the terminal 
-siduction-paste -> shell script
+;; M-x 0x0-*
+;; M-x dpaste
+;; M-x webpaste-paste-buffer
+;; M-x webpaste-paste-buffer-or-region
+;; M-x webpaste-paste-buffer-or-region
+;; M-x webpaste-paste-region
+;; pastebinit -> (simlink -> glueDebian)
+;; pastebinit	for sending local texts online, through the terminal 
+;; pastebinit | pbcopy	for sending local texts online, through the terminal 
+;; siduction-paste -> shell script
 
 ** printing buffers/files
 
-M-x ps-print-buffer-with-faces
+;; M-x ps-print-buffer-with-faces
 
-M-x print-*
-M-x print-buffer
-M-x pr-ps-*-print
-M-x pr-ps-print-*-buffer
-M-x ps-print-buffer
-M-x print-nestings
-M-x print-region
-M-x ps-print-*
-M-x ps-print-region
-M-x ps-print-customize
+;; M-x print-*
+;; M-x print-buffer
+;; M-x pr-ps-*-print
+;; M-x pr-ps-print-*-buffer
+;; M-x ps-print-buffer
+;; M-x print-nestings
+;; M-x print-region
+;; M-x ps-print-*
+;; M-x ps-print-region
+;; M-x ps-print-customize
 
-Note: choose Deskjet-840C;
-do NOT use or DESELECT:
-"print in black";
-"fit on page";
-"pretty print";
-"wrap region"
-Choose "(draft/normal) grayscale 
+;; Note: choose Deskjet-840C;
+;; do NOT use or DESELECT:
+;; "print in black";
+;; "fit on page";
+;; "pretty print";
+;; "wrap region"
+;; Choose "(draft/normal) grayscale 
 
-#emacs-vanilla
+
+;; emacs-vanilla
+
 ;; you can also evaluate these modes with:
 ;; M-:
 
@@ -1595,168 +1596,170 @@ Choose "(draft/normal) grayscale
 ;; M-x general-describle-keybindings
 ;; M-x describle-personal-keybindings
 
-(viper-mode)
-(ido-mode 1)
-(show-paren-mode 1)
-(global-auto-revert-mode 1)
-(column-number-mode 1)
-(global-hl-line-mode 1)
-(setq-default-truncate-lines t)
-(tool-bar-mode 0)
-(menu-bar-mode 0)
-(scroll-bar-mode -1)
-(load-theme 'misterioso')
-(setq inhibit-startup-screen t)
-(setq initial-scratch-message
-      ";; Scratch that!\n")
-(auto-fill-mode 0)
-(auto-fill-mode 1)
+;; (viper-mode)
+;; (ido-mode 1)
+;; (show-paren-mode 1)
+;; (global-auto-revert-mode 1)
+;; (column-number-mode 1)
+;; (global-hl-line-mode 1)
+;; (setq-default-truncate-lines t)
+;; (tool-bar-mode 0)
+;; (menu-bar-mode 0)
+;; (scroll-bar-mode -1)
+;; (load-theme 'misterioso')
+;; (setq inhibit-startup-screen t)
+;; (setq initial-scratch-message
+;;       ";; Scratch that!\n")
+;; (auto-fill-mode 0)
+;; (auto-fill-mode 1)
 
-M-x helm-stumpwm-commands
+;; M-x helm-stumpwm-commands
 
-M-x pull
-M-x pull-*
+;; M-x pull
+;; M-x pull-*
 
-M-x iresize
+;; M-x iresize
 
-M-x dump-*
-then save it to:
-~/dumped_stumpFiles
-or
-/tmp
+;; M-x dump-*
+;; then save it to:
+;; ~/dumped_stumpFiles
+;; or
+;; /tmp
 
-M-x restore-*
+;; M-x restore-*
 
-The dumped files are in:
+;; The dumped files are in:
 
-(find-fline "/home/vagner/dumped_stumpFiles")
-directory
+;; (find-fline "/home/vagner/dumped_stumpFiles")
+;; directory
 
-M-x helm-buffers-list
-very good command. See also "consult-buffer"
+;; M-x helm-buffers-list
+;; very good command. See also "consult-buffer"
 
-C-x C-f find-files
+;; C-x C-f find-files
 
-Note: you can type "/~" AFTER any given minibuffer (echo-area) path to get to your HOME folder
-Note: you can type "//" AFTER any given minibuffer (echo-area) path to get to your ROOT folder
-Note: on Windows, you can type ":C" AFTER any given minibuffer (echo-area) path to get to your ROOT folder
+;; Note: you can type "/~" AFTER any given minibuffer (echo-area) path to get to your HOME folder
+;; Note: you can type "//" AFTER any given minibuffer (echo-area) path to get to your ROOT folder
+;; Note: on Windows, you can type ":C" AFTER any given minibuffer (echo-area) path to get to your ROOT folder
 
-C-x C-r ido-find-file-read-only
-M-x helm-find-files
-M-s- h sisr - toggle simplescreenrecorder
-C-z enable Emacs state
+;; C-x C-r ido-find-file-read-only
+;; M-x helm-find-files
+;; M-s- h sisr - toggle simplescreenrecorder
+;; C-z enable Emacs state
 
 ;; C-M-?
-(global-set-key [201326655] 'find-emacs-keys-intro)
+;; (global-set-key [201326655] 'find-emacs-keys-intro)
 
 ** input-method
 
-- for maths, physics, chemistry, et.al
+;; for maths, physics, chemistry, et.al
 
-M-x set-input-method RET TeX
+;; M-x set-input-method RET TeX
 
-video tutorial
-straw-viewer
-Tool Time Session 2: Emacs Customization
-Chris Kauffman
+;; video tutorial
+;; straw-viewer
+;; Tool Time Session 2: Emacs Customization
+;; Chris Kauffman
 
-comint is a command to run programs and
-write your own programs
-M-x comint-run RET mpv
-M-x list-processes
-M-x counsel-list-processes
+;; comint is a command to run programs and
+;; write your own programs
+;; M-x comint-run RET mpv
+;; M-x list-processes
+;; M-x counsel-list-processes
 
-;; comint for folder/directory/file completion
-M-x comint-mode
+;; ;; comint for folder/directory/file completion
+;; M-x comint-mode
 
-M-TAB	show the options for completion
+;; M-TAB	show the options for completion
 
 ** html-mode
 
-call
-M-x global-company-mode
-When editing an html file to get completion
 
-How to use impatient-mode:
+;; call
+;; M-x global-company-mode
+;; When editing an html file to get completion
 
-note: it does not work with
-xah-html-mode
+;; How to use impatient-mode:
 
-install it:
+;; note: it does not work with
+;; xah-html-mode
+
+;; install it:
 
 ;; impatient-mode
 ;; for html and css
 
-(use-package impatient-mode
+;; (use-package impatient-mode
   :ensure t)
+;; 
+;; M-x impatient-mode
+;; M-x httpd-start
+;; M-x impatient-mode
+;; M-x html-mode
 
-M-x impatient-mode
-M-x httpd-start
-M-x impatient-mode
-M-x html-mode
+;; Then open the html file in the browser
+;; http//localhost:8080/imp/
 
-Then open the html file in the browser
-http//localhost:8080/imp/
+;; or open with :
+;; impatient-mode.sh
+;; shellscript in terminal
 
-or open with :
-impatient-mode.sh
-shellscript in terminal
+;; http://xahlee.info/js/html_basics.html
+;; http://xahlee.info/js/css_basics.html
+;; https://www.w3schools.com/html/default.asp
 
-http://xahlee.info/js/html_basics.html
-http://xahlee.info/js/css_basics.html
-- https://www.w3schools.com/html/default.asp
+;;  or
 
- or
+;; (browse-url buffer-file-name)
+;; (browse-url-chrome buffer-file-name)
+;; 
+;; M-: (browse-url buffer-file-name)
+;; M-: (browse-url-chrome buffer-file-name)
+;; M-x browse-url-of-file 
 
-(browse-url buffer-file-name)
-(browse-url-chrome buffer-file-name)
+;; M-x httpd-start
+;; M-x impatient-mode
+;; M-x imp-toggle-htmlize
 
-M-: (browse-url buffer-file-name)
-M-: (browse-url-chrome buffer-file-name)
-M-x browse-url-of-file 
-
-M-x httpd-start
-M-x impatient-mode
-M-x imp-toggle-htmlize
-
-M-x browse-url http://localhost:8080/imp/live/erick_class-01.html
-
-;;;;;;;;;;;;;;;;;;;;;;;
-
-Ho to browse an URL?
-Just call "M-x browse-url-*" at the end of a given URL
-- https://www.wikipedia.com
-
-or do:
-
-(browse-url "https://teachyourselfcs.com")
-
-or do:
-
-(browse-url-chromium
-"https://www.wikipedia.com")
-
-or:
-
-(browse-url-firefox
-"https://www.wikipedia.com")
-and "M-e" on them...
+;; M-x browse-url http://localhost:8080/imp/live/erick_class-01.html
 
 ;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Ho to browse an URL?
+;; Just call "M-x browse-url-*" at the end of a given URL
+;; https://www.wikipedia.com
+
+;; or do:
+
+;; (browse-url "https://teachyourselfcs.com")
+
+;; or do:
+
+;; (browse-url-chromium
+;; "https://www.wikipedia.com")
+
+;; or:
+
+;; (browse-url-firefox
+;; "https://www.wikipedia.com")
+;; and "M-e" on them...
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;
 
 ** more on html
 
-You can learn a great deal of html
-by using htmlize command
-M-x htmlize-*
 
-You can create a html 
-eskeleton file
-with htmlize as well
+;; You can learn a great deal of html
+;; by using htmlize command
+;; M-x htmlize-*
 
-Another good command is:
-M-x xah-html-redo-syntax-buffer
-M-x xah-html-redo-syntax-file
+;; You can create a html 
+;; eskeleton file
+;; with htmlize as well
+
+;; Another good command is:
+;; M-x xah-html-redo-syntax-buffer
+;; M-x xah-html-redo-syntax-file
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -1768,184 +1771,183 @@ M-x xah-html-redo-syntax-file
 
 ** recording
 
-- Videos
-with external microphone,
-90% is a good level
-configuration:
-planet usb stereo/or surround 5.1 and mono
+;; Videos
+;; with external microphone,
+;; 90% is a good level
+;; configuration:
+;; planet usb stereo/or surround 5.1 and mono
 
-you can use simplescreenrecorder:
-simplescreenrecorder
+;; you can use simplescreenrecorder:
+;; simplescreenrecorder
 
 ;; (find-sh "simplescreenrecorder")
 
-you can use recordmydesktop cli:
-recordmydesktop --device pulse -o ~/Videos/out.ogv
+;; you can use recordmydesktop cli:
+;; recordmydesktop --device pulse -o ~/Videos/out.ogv
 
-you can use voko.sh or vokoscreenNG as well 
-Configure the keys to "Alt+r" for "starting and finishing" to record a video
+;; you can use voko.sh or vokoscreenNG as well 
+;; Configure the keys to "Alt+r" for "starting and finishing" to record a video
 
 ;; (find-sh "recordmydesktop --device pulse -o ~/Videos/out.ogv")
-
-- Audios
-
-- M-x whisper
-- rec
-- sox
-- see:
-- (find-fline "~/org/console_apps")
+;; 
+;; Audios
+;; 
+;; M-x whisper
+;; rec
+;; sox
+;; see:
+;; (find-fline "~/org/console_apps")
 
 ** scp
 
-scp through terminal
+;; scp through terminal
 
-e.g.:
-scp22 jitsi-on-line.sh jitsi-meeting.sh lea@ipaw:/tmp
-ipaw is only a placeholder
+;; e.g.:
+;; scp22 jitsi-on-line.sh jitsi-meeting.sh lea@ipaw:/tmp
+;; ipaw is only a placeholder
 
 ** tramp
-for accessing tramp in another computer, you have
-to use a simple ".bashrc" file with no fancy $PS
-otherwise, you get tramp time-out error
 
-C-x C-f /ssh:vagner@dinosaur.local:~
-C-x C-f /ssh:vagner@ip:port:~
 
-(find-fline "/sshx:vagner@cypher.local#2299:~")
+;; for accessing tramp in another computer, you have
+;; to use a simple ".bashrc" file with no fancy $PS
+;; otherwise, you get tramp time-out error
 
-(find-fline "/sshx:lea@cypher.local#2299:~")
+;; C-x C-f /ssh:vagner@dinosaur.local:~
+;; C-x C-f /ssh:vagner@ip:port:~
 
-(find-fline "/sshx:lea@dino.local#22:~/.emacs.d")
+;; (find-fline "/sshx:vagner@cypher.local#2299:~")
 
-(find-fline "/sshx:lea@192.168.2.7#22:~/.emacs.d")
+;; (find-fline "/sshx:lea@cypher.local#2299:~")
+;; 
+;; (find-fline "/sshx:lea@dino.local#22:~/.emacs.d")
 
-(find-fline "/sshx:lea@192.168.2.7#22:~/bin")
+;; (find-fline "/sshx:lea@192.168.2.7#22:~/.emacs.d")
 
-(find-fline "/sshx:lea@192.168.2.2#22:~/.emacs.d")
+;; (find-fline "/sshx:lea@192.168.2.7#22:~/bin")
 
-(find-fline "/sshx:vagner@cypher.local#22:~")
+;; (find-fline "/sshx:lea@192.168.2.2#22:~/.emacs.d")
 
-(find-fline "/sshx:vagner@192.168.2.5#22:~/.emacs.d")
+;; (find-fline "/sshx:vagner@cypher.local#22:~")
+
+;; (find-fline "/sshx:vagner@192.168.2.5#22:~/.emacs.d")
 
 ** eshell
 
-you can use tramp through eshell
-cd /sshx:vagner@cypher.local#2299:~
-cd /sshx:lea@cypher.local#2299:~
-cd /sshx:lea@lea-pet.local#2299:~
+;; you can use tramp through eshell
+;; cd /sshx:vagner@cypher.local#2299:~
+;; cd /sshx:lea@cypher.local#2299:~
+;; cd /sshx:lea@lea-pet.local#2299:~
 
-Multiple eshells
-C-u M-x eshell opens another eshell
+;; Multiple eshells
+;; C-u M-x eshell opens another eshell
 
 ** vterm
 
-vterm-copy-mode
-scroll-up-command
-scroll-down-command
-C-c p	previous prompt
-C-c n	next prompt
-C-M p	previous command
-C-M n	next command
+;; vterm-copy-mode
+;; scroll-up-command
+;; scroll-down-command
+;; C-c p	previous prompt
+;; C-c n	next prompt
+;; C-M p	previous command
+;; C-M n	next command
 
-spc o T	open vterm in the actual buffer folder
-vterm/here	spc o T
-C-c C-t	vterm-copy-mode
-then, select a region to be copied and issue:
-vterm-copy-mode-done
-then, paste wherever you want
-C-{	vterm-send-up	
-vterm-send-C-k	kill vterm
+;; spc o T	open vterm in the actual buffer folder
+;; vterm/here	spc o T
+;; C-c C-t	vterm-copy-mode
+;; then, select a region to be copied and issue:
+;; vterm-copy-mode-done
+;; then, paste wherever you want
+;; C-{	vterm-send-up	
+;; vterm-send-C-k	kill vterm
 
 ** multi-vterm
 
-multi-vterm 	Create new terminal
-multi-vterm-next 	Switch to next terminal
-multi-vterm-prev 	Switch to previous terminal
-multi-vterm-dedicated-toggle 	Toggle dedicated terminal
-multi-vterm-project 	Create/toggle terminal based on current project
+;; multi-vterm 	Create new terminal
+;; multi-vterm-next 	Switch to next terminal
+;; multi-vterm-prev 	Switch to previous terminal
+;; multi-vterm-dedicated-toggle 	Toggle dedicated terminal
+;; multi-vterm-project 	Create/toggle terminal based on current project
 
 ** fzf
 
-fzf	in Emacs 
-fzf	in a terminal to search for files
-:FZF	in vim and nvim - note the capital letters
+;; fzf	in Emacs 
+;; fzf	in a terminal to search for files
+;; :FZF	in vim and nvim - note the capital letters
 
 ** Email writing with org-msg
 
-- mu4e
+;; mu4e
 
-M-x mu4e	C-F10
+;; M-x mu4e	C-F10
 
-M-x mu4e-compose-new
-or hit "C"
+;; M-x mu4e-compose-new
+;; or hit "C"
 
-and go to buffer "No subject" 
-until org-msg bug is fixed
+;; and go to buffer "No subject" 
+;; until org-msg bug is fixed
 
-M-x mu4e-compose-mail
+;; M-x mu4e-compose-mail
 
-M-x embark-act	on an email address
+;; M-x embark-act	on an email address
 
-You can use
-(find-fline "~/email_contacts_VRFdS")
-To act on them
+;; You can use
+;; (find-fline "~/email_contacts_VRFdS")
+;; To act on them
 
+;; M-x org-msg-mode
+;; M-x message-mail
+;; M-x insert-file-literally
+;; M-x org-msg-attach
+;; M-x message-send
+;; M-x mu4e-compose-new
+;; M-x fill-paragraph -> M-q
+;; M-x org-fill-paragraph
 
-M-x org-msg-mode
-M-x message-mail
-M-x insert-file-literally
-M-x org-msg-attach
-M-x message-send
-M-x mu4e-compose-new
-M-x fill-paragraph -> M-q
-M-x org-fill-paragraph
+;; You can also use:
+;; "fmt" and "fold" Linux cli
+;; to beautify your email message
 
-You can also use:
-"fmt" and "fold" Linux cli
-to beautify your email message
+;; This bit is to be used when sending an Email
+;; from firefox:
+;; M-x mu4e-org-mode
+;; yas-insert-snippets
+;; orgMail
+;; 
+;; Make a hardlink to
 
-This bit is to be used when sending an Email
-from firefox:
-M-x mu4e-org-mode
-yas-insert-snippets
-orgMail
+;; ln ~/emailAddrss ../.mailrc
 
-Make a hardlink to
+;; To have your email addresses in Emacs
+;; Then in the sending fields, call:
 
-ln ~/emailAddrss ../.mailrc
+;; M-x merge-mail-abbrevs
+;; ~/email_contacts_VRFdS
+;; M-x mail-abbrev-insert-alias
 
-To have your email addresses in Emacs
-Then in the sending fields, call:
+;; in Emacs, if it does not source, call:
+;; M-x merge-mail-abbrevs
+;; ~/email_contacts_LGdS
+;; or
+;; ~/email_contacts_VRFdS
+;; M-x mail-abbrev-insert-alias
+;; or
+;; M-x edit-abbrevs
 
-M-x merge-mail-abbrevs
-~/email_contacts_VRFdS
-M-x mail-abbrev-insert-alias
-
-in Emacs, if it does not source, call:
-M-x merge-mail-abbrevs
-~/email_contacts_LGdS
-or
-~/email_contacts_VRFdS
-M-x mail-abbrev-insert-alias
-or
-M-x edit-abbrevs
-
-- http://tny.im/YnW7S
-
-#+end_src
+;; http://tny.im/YnW7S
 
 ** mail-send
 
-M-x mail-send send email from any buffer of file
-You just need to use these fields onthe top of the file
-and you can format the message with ":!par nj"
-'n' is number 'j' is justify 'info par'
+;; M-x mail-send send email from any buffer of file
+;; You just need to use these fields onthe top of the file
+;; and you can format the message with ":!par nj"
+;; 'n' is number 'j' is justify 'info par'
 
-To:
-Subject:
-Cc:
-Bcc:
-From: VRFdS <varefedas@gmail.com>
+;; To:
+;; Subject:
+;; Cc:
+;; Bcc:
+;; From: VRFdS <varefedas@gmail.com>
 
 ** How to debug doom-emacs or emacs
 
@@ -1981,71 +1983,72 @@ From: VRFdS <varefedas@gmail.com>
 
 ** curl
 
-curl cheat.sh --> cht.sh (script)
-There is a vim plugin and an emacs package for this
-e.g.:
-curl cheat.sh   opens a "github.com/chubin/cheat.sh" site documentation
-curl cht.sh/:help|less  opens a curl cheat.sh help
-cht.sh python :learn    learn python through cheat.sh terminal
-cht.sh --shell  opens a cheat.sh terminal
-see also:
-"~/anki_flashcards/curl_cli_hto"
+;; curl cheat.sh --> cht.sh (script)
+;; There is a vim plugin and an emacs package for this
+;; e.g.:
+;; curl cheat.sh   opens a "github.com/chubin/cheat.sh" site documentation
+;; curl cht.sh/:help|less  opens a curl cheat.sh help
+;; cht.sh python :learn    learn python through cheat.sh terminal
+;; cht.sh --shell  opens a cheat.sh terminal
+;; see also:
+;; "~/anki_flashcards/curl_cli_hto"
 
 ** Sharing files through a simple python server
 
-Enter in da folder and run
-python -m http.server [8000]
-By default the ports is 8000
+;; Enter in da folder and run
+;; python -m http.server [8000]
+;; By default the ports is 8000
 
-- M-x flycheck-select-checker and enter python-pylint
+;; M-x flycheck-select-checker and enter python-pylint
 
-- unicode character
-- you can use gnome-character app
-- or
+;; unicode character
+;; you can use gnome-character app
 
-M-x counsel-unicode-char
-M-x ucs-insert
-M-x helm-ucs
+;; or
 
-screenshots
-M-x org-screenshot-take (C-x M-s t)
+;; M-x counsel-unicode-char
+;; M-x ucs-insert
+;; M-x helm-ucs
+
+;; screenshots
+;; M-x org-screenshot-take (C-x M-s t)
 
 ** telega
 
-M-x telega
-or
-(telega) -> then M-e
+;; M-x telega
+;; or
+;; (telega) -> then M-e
 
-If telega refuses to start in a Emacsen, just kill its process helding
-the start up with:
-sudo killall telega
-sudo pkill telega
+;; If telega refuses to start in a Emacsen, just kill its process helding
+;; the start up with:
+;; sudo killall telega
+;; sudo pkill telega
 
-How to send a contact to another person:
-M-x telega-chatbuf-attach-contact
+;; How to send a contact to another person:
+;; M-x telega-chatbuf-attach-contact
 
-M-x telega-view-search -> for searching messages
-M-x telega-view-contacts -> for viewing all contacts
-M-x telega-chatbuf-attach-voice-note -> make a voice note in telega
+;; M-x telega-view-search -> for searching messages
+;; M-x telega-view-contacts -> for viewing all contacts
+;; M-x telega-chatbuf-attach-voice-note -> make a voice note in telega
 
-M-x telega-msg-translate (t)
-M-x telega-msg-translate (C-u t) to another language
+;; M-x telega-msg-translate (t)
+;; M-x telega-msg-translate (C-u t) to another language
 
-format(ing) messages in telega
-M-x telega-chatbuf-attach-markup
-Then, choose from: markdown2, org, html, markdown1
+;; format(ing) messages in telega
+;; M-x telega-chatbuf-attach-markup
+;; Then, choose from: markdown2, org, html, markdown1
 
-C-c C-a	attachment type
+;; C-c C-a	attachment type
 
-M-x telega-msg-add-reaction
+;; M-x telega-msg-add-reaction
 
 ** setting time and dates
 
-org-time-stamp - spc m d t
+;; org-time-stamp - spc m d t
 
 ** kill-ring for history pasting
 
-helm-show-kill-ring - C-x c M-y
+;; helm-show-kill-ring - C-x c M-y
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -2060,14 +2063,14 @@ helm-show-kill-ring - C-x c M-y
 
 ** help
 
-- M-x helpful-callable
+;; M-x helpful-callable
 
-- For learning Hebrew
-- https://hebrew4christians.com/
-- For chords lyrics
-- https://messianicchords.com
-- For songs - radio
-- https://messianicradio.com/
+;; For learning Hebrew
+;; https://hebrew4christians.com/
+;; For chords lyrics
+;; https://messianicchords.com
+;; For songs - radio
+;; https://messianicradio.com/
 
 ;; Study this
 ;; Emacs vanilla
@@ -2079,42 +2082,52 @@ helm-show-kill-ring - C-x c M-y
 ;; finder-exit
 
 ;; Lisp snippets
-- https://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Snippets.html
-http://bigwalter.net/daniel/elisp/snippets.html
+;;  https://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Snippets.html
+
+;; http://bigwalter.net/daniel/elisp/snippets.html
 
 ;; lisp (and other programming languages) navigation
 
-C-M d	move to a down list level
-C-M u	move to an up list level
-C-M f	move forward a sexp
-C-M b	move backward a sexp
-C-M n	move to the next sexp
-C-M p	move to the previous sexp
-C-M k	kill an sexp
+;; C-M d	move to a down list level
+;; C-M u	move to an up list level
+;; C-M f	move forward a sexp
+;; C-M b	move backward a sexp
+;; C-M n	move to the next sexp
+;; C-M p	move to the previous sexp
+;; C-M k	kill an sexp
 
 ;; Defun (class, text, chapter, and other programming languages) navigation
 
-C-M a	move to the beginning of a defun
-C-M e	move to the end of a defun
+;; C-M a	move to the beginning of a defun
+;; C-M e	move to the end of a defun
 
 ;; good places to learn polyglot programming
 
-Basics Of Programming - - https://engineerworkshop.com/blog/bui...
-Data Types In Java - - https://www.w3schools.com/java/java_d...
-Data Structures - - https://towardsdatascience.com/8-comm...
-Object Oriented Programming Concepts and Games - - https://github.com/topics/object-orie...
-VisualAlgo - https://visualgo.net/en
+;; Basics Of Programming
+;; https://engineerworkshop.com/blog/bui...
+
+;; Data Types In Java
+;; https://www.w3schools.com/java/java_d...
+
+;; Data Structures
+;; https://towardsdatascience.com/8-comm...
+
+;; Object Oriented Programming Concepts and Games
+;; https://github.com/topics/object-orie...
+
+;; VisualAlgo
+;; https://visualgo.net/en
 
 ;; xpaint canvas dimensions
 
-Alt-F2
-xpaint
-Canvas -> New with size
-dimensions
-width 1337
-height 625
+;; Alt-F2
+;; xpaint
+;; Canvas -> New with size
+;; dimensions
+;; width 1337
+;; height 625
 
-;; Rofi
+;; ;; Rofi
 ;; win-F2
 ;; rofi-theme-selector
 
@@ -2123,50 +2136,55 @@ height 625
 
 ** abbrev-mode
 
-C-x a i l	inverse-add-mode-abbrev (adds a local abbreviation to a file)
-C-x a - 	inverse-add-global-abbrev (adds a global abbreviation to the default abbrev file)
-usage, e.g.:
-vgmail	hit "C-x a i l"
-Then you can type "vgmail" and hit "SPC" key
-list-abbrevs
-C-x '	expand-abbrev
-expand-region-abbrevs
-unexpand-abbrev
-abbrev-mode	(toggles abbrev-mode)
-kill-all-abbrevs	(kills abbrev-mode)
+;; C-x a i l	inverse-add-mode-abbrev (adds a local abbreviation to a file)
+;; C-x a - 	inverse-add-global-abbrev (adds a global abbreviation to the default abbrev file)
+;; usage, e.g.:
+;; vgmail	hit "C-x a i l"
+;; Then you can type "vgmail" and hit "SPC" key
+;; list-abbrevs
+;; C-x '	expand-abbrev
+;; expand-region-abbrevs
+;; unexpand-abbrev
+;; abbrev-mode	(toggles abbrev-mode)
+;; kill-all-abbrevs	(kills abbrev-mode)
 
-Note: you can create abbreviations for coding; spelling; Organisations, etc... See here:
+;; Note: you can create abbreviations for coding; spelling; Organisations, etc... See here:
+;; 
+;; Emacs Abbreviation Mode - Invidious :abbrev-mode:Emacs:
 
-- Emacs Abbreviation Mode - Invidious :abbrev-mode:Emacs:
-- https://www.youtube.com/watch?v=AtdWuYImviw&t=816
-- https://invidious.lunar.icu/watch?v=AtdWuYImviw
-- http://xahlee.info/emacs/emacs/emacs_abbrev_mode_tutorial.html
+;; https://www.youtube.com/watch?v=AtdWuYImviw&t=816
+
+;; https://invidious.lunar.icu/watch?v=AtdWuYImviw
+
+;; http://xahlee.info/emacs/emacs/emacs_abbrev_mode_tutorial.html
 
 ** debpkg-links
-M-x find-debpkg-links 
+
+;; M-x find-debpkg-links 
 
 ** People with great configs
 
-SqrtMinusOne
-- https://sqrtminusone.xyz/configs/emacs/
+;; SqrtMinusOne
+;; https://sqrtminusone.xyz/configs/emacs/
 
 ** Doomcasts
 
-- https://www.youtube.com/playlist?list=PLhXZp00uXBk4np17N39WvB80zgxlZfVwj
+;; https://www.youtube.com/playlist?list=PLhXZp00uXBk4np17N39WvB80zgxlZfVwj
 
 ** elinks
 
-you can use elinks to grab information
-saving them in /tmp
+;; you can use elinks to grab information
+;; saving them in /tmp
 
 ** Fossil vc
 
-# in Emacs, use the "M-x v" inside a fossil directory
-# See my "chisel_fossOrion.sh" script
+;; in Emacs, use the "M-x v" inside a fossil directory
+;; See my "chisel_fossOrion.sh" script
+;; 
+;; (find-fline "/home/lea/Documents/e-books/bash_language/linux_shell_scripting_cookbook.pdf")
+;; (find-fline "/media/sdb1-500GB_bak/home/vagner/Documents/e-books/bash_language/linux_shell_scripting_cookbook.pdf")
 
-# (find-fline "/home/lea/Documents/e-books/bash_language/linux_shell_scripting_cookbook.pdf")
-# (find-fline "/media/sdb1-500GB_bak/home/vagner/Documents/e-books/bash_language/linux_shell_scripting_cookbook.pdf")
-p. 279 - using Fossil  
+;; p. 279 - using Fossil  
 
 ** Programming documentation
 
@@ -2192,18 +2210,23 @@ M-x devdocs-*
 
 ** Getting help in scimax
 
-F12-h	opens hydra
+;; F12-h	opens hydra
 
 ** hydra
 
-M-x hydra	shows various hydra options
+;; M-x hydra	shows various hydra options
 
 ** My repositories
 
 ;; codeberg: https://codeberg.org/cypher
+
 ;; github: https://github.com/OrionRandD
+
 ;; gitlab: https://gitlab.com/OrionRandD
-;; fossil: - https://chiselapp.com/user/OrionRandD/repository/cypher_raiz/home
+
+;; fossil:
+
+;; https://chiselapp.com/user/OrionRandD/repository/cypher_raiz/home
 
 ** Git and Magit
 
@@ -2219,11 +2242,11 @@ M-x hydra	shows various hydra options
 
 ** AI tools
 
-- Bing AI (this one is accessible only through having a M$ account)
-- chatGPT
-- google bard
-- phind
-- (browse-url-firefox "https://phind.com")
+;; Bing AI (this one is accessible only through having a M$ account)
+;; chatGPT
+;; google bard
+;; phind
+;; (browse-url-firefox "https://phind.com")
 
 ** Tags insertion
 
@@ -2235,268 +2258,276 @@ M-x hydra	shows various hydra options
 
 ** elisp tricks
 
-- say, in a 'foo.el', do:
-- (elisp-enable-lexical-binding 1)
--  or
-- M-x elisp-enable-lexical-binding 
+;; say, in a 'foo.el', do:
+;; (elisp-enable-lexical-binding 1)
 
-- find-slyprocess
-- M-x elisp-index-search
-  ;; it is good for searching elisp documentation
+;;  or
 
-- Learning Elisp - 1 - intro - Invidious :grasp:
-(browse-url-firefox "https://inv.zzls.xyz/watch?v=x9Qws7ZOksc")
+;; M-x elisp-enable-lexical-binding 
 
-(switch-to-buffer "*scratch*")
-(find-file "~/lab_test")
-(find-fline "/tmp")
-(split-window) 
-(split-window-vertically)
-(split-window-horizontally)
-(insert " => Hello World ")
-(upcase "Hello World")
+;; find-slyprocess
+;; M-x elisp-index-search
+;; it is good for searching elisp documentation
+
+;; Learning Elisp - 1 - intro - Invidious :grasp:
+;; (browse-url-firefox "https://inv.zzls.xyz/watch?v=x9Qws7ZOksc")
+
+;; (switch-to-buffer "*scratch*")
+;; (find-file "~/lab_test")
+;; (find-fline "/tmp")
+;; (split-window) 
+;; (split-window-vertically)
+;; (split-window-horizontally)
+;; (insert " => Hello World ")
+;; (upcase "Hello World")
 
 ;; variables
-(defvar x 20)
-(print x)
-(identity x)
-(setq name " => jupi ")
-(print name)
-(insert name) => jupi
 
-(setq x 30
-      name " => underg ")
+;; (defvar x 20)
+;; (print x)
+;; (identity x)
+;; (setq name " => jupi ")
+;; (print name)
+;; (insert name) => jupi
+;; 
+;; (setq x 30
+;;       name " => underg ")
 
 ;; local variables
-(let ((x 20)
-	(name " => tom"))
-        (print x)
-        (insert name)) => tom
+;; (let ((x 20)
+;; 	(name " => tom"))
+;;         (print x)
+;;         (insert name)) => tom
 
-(let (x name)
-  (setq x 100
-        name " => Sue ")
-  (print x)
-  (insert name))
+;; (let (x name)
+;;   (setq x 100
+;;         name " => Sue ")
+;;   (print x)
+;;   (insert name))
 
 ;; functions
-(defun add2 (num1 num2)
-  "Add2 will add 2 numbers"
-  (+ num1 num2))
+;; (defun add2 (num1 num2)
+;;   "Add2 will add 2 numbers"
+;;   (+ num1 num2))
 
-(add2 45 89)
+;; (add2 45 89)
 
-(defun five-lines-down ()
-	"This is a simple function to jump five lines down"
-        (dotimes (i 5)
-        (next-line)))
+;; (defun five-lines-down ()
+;; 	"This is a simple function to jump five lines down"
+;;         (dotimes (i 5)
+;;         (next-line)))
 
-(five-lines-down)
-        
-(dotimes(i 10)
- (insert " => Hello ")) => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello 
+;; (five-lines-down)
 
- ;; This will print the alphabet 
- (dotimes (i 26 )
-  (insert (+ 65 i )))
-  
+;; (dotimes(i 10)
+;;  (insert " => Hello ")) => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello  => Hello 
+;; 
+;; This will print the alphabet 
+;;  (dotimes (i 26 )
+;;   (insert (+ 65 i )))
+
 ;; go-down-upcase
-(defun go-down-upcase ()
-"Function to go-down and upcase words"
-(interactive)
-(dotimes (i 8)
-(next-line))
-(forward-word)
-(upcase-word 1)
-(forward-word)
-(upcase-word 1)
-)
+;; (defun go-down-upcase ()
+;; "Function to go-down and upcase words"
+;; (interactive)
+;; (dotimes (i 8)
+;; (next-line))
+;; (forward-word)
+;; (upcase-word 1)
+;; (forward-word)
+;; (upcase-word 1)
+;; )
 
-(go-down-upcase)
-
+;; (go-down-upcase)
+;; 
 ;; Then bound the function to "C-z"
 ;; (keymap-local-set "C-z" 'go-down-upcase)
 
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  NULLAM tempus.  MAURIS ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam VEL neque NEC dui dignissim bibendum.  Vivamus id enim.  PHASELLUS neque ORCI, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
+;; Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  NULLAM tempus.  MAURIS ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam VEL neque NEC dui dignissim bibendum.  Vivamus id enim.  PHASELLUS neque ORCI, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
 
 ** (n)vim
 
-:terminal
-Then you can use diatheke aliases
-and copy them to the files
-But, you have to use "ESC" (not the remapped Caps-Lock) or "Ctrl ["
-keys to navigate through the vim-terminal (Normal-mode)
+;; :terminal
+;; Then you can use diatheke aliases
+;; and copy them to the files
+;; But, you have to use "ESC" (not the remapped Caps-Lock) or "Ctrl ["
+;; keys to navigate through the vim-terminal (Normal-mode)
 
 ** Racket
 
-call racket mode in a "$foo.rkt"
-C-c C-c	in a Racket file "$foo.rkt"
+;; call racket mode in a "$foo.rkt"
+;; C-c C-c	in a Racket file "$foo.rkt"
 
 ** kmacro
 
-C-x (           kmacro-start-macro
-C-x )           kmacro-end-macro
-C-x e           kmacro-end-and-call-macro
-C-x C-k r       apply-macro-to-region-lines
+;; C-x (           kmacro-start-macro
+;; C-x )           kmacro-end-macro
+;; C-x e           kmacro-end-and-call-macro
+;; C-x C-k r       apply-macro-to-region-lines
 
-racket-stepper
+;; racket-stepper
 
-M-x racket-expand-file
-M-x racket-expand-definition
-M-x racket-expand-region
-M-x racket-expand-last-sexp
+;; M-x racket-expand-file
+;; M-x racket-expand-definition
+;; M-x racket-expand-region
+;; M-x racket-expand-last-sexp
 
 ** elisp and lisp in (n)vim
 
-command-mode
+;; command-mode
 
-:!st -e rlwrap sbcl --load
-/home/vagner/.config/nvim/plugged/vlime/lisp/start-vlime.lisp &
+;; :!st -e rlwrap sbcl --load
+;; /home/vagner/.config/nvim/plugged/vlime/lisp/start-vlime.lisp &
 
-Try to edit (e)lisp files with the vim aliases:
+;; Try to edit (e)lisp files with the vim aliases:
 
-vimva
-or
-nvimva
-or
-vimmin
+;; vimva
+;; or
+;; nvimva
+;; or
+;; vimmin
 
 ** Vimium-c firefox extension
 
-?	help
-f	find links in current page
+;; ?	help
+;; f	find links in current page
 
 ** Mail-mode
-Start any $file.txt
-call:
-M-x mail-mode
-M-x mail-to
-M-x mail-cc
-M-x mail-subject
-M-x mail-text
-M-x mail-send
-M-x yas-insert-snippets
+
+;; Start any $file.txt
+
+;; call:
+;; M-x mail-mode
+;; M-x mail-to
+;; M-x mail-cc
+;; M-x mail-subject
+;; M-x mail-text
+;; M-x mail-send
+;; M-x yas-insert-snippets
 
 ** Vm-mode
-Start any $file.txt
-call:
-M-x vm-mode
-M-x vm-mail
-M-x vm-mail-send
-M-x vm-*
-M-x vm-mail-*
+
+;; Start any $file.txt
+;; call:
+;; M-x vm-mode
+;; M-x vm-mail
+;; M-x vm-mail-send
+;; M-x vm-*
+;; M-x vm-mail-*
 
 ** Orgmode
 
-M-x consult-org-heading
-M-x org-drill-*
+;; M-x consult-org-heading
+;; M-x org-drill-*
 
-Note by Cypher:
-org-drill URL data gathering
+;; Note by Cypher:
+;; org-drill URL data gathering
 
-You can use:
-C-c c w (capture website)
+;; You can use:
+;; C-c c w (capture website)
 
-M-x org-eww-copy-for-org-mode
-and, then:
-C-c C-e tu (to turn the copy into plain text)
+;; M-x org-eww-copy-for-org-mode
+;; and, then:
+;; C-c C-e tu (to turn the copy into plain text)
 
-these two methods work for selected text and for the whole visited URL
+;; these two methods work for selected text and for the whole visited URL
 
-then you can prepare your org-drill cards
+;; then you can prepare your org-drill cards
 
-M-x anki-editor-*
-M-x anki-editor-insert-note
-M-x anki-editor-push-notes
-M-x anki-helper-*
-
-
+;; M-x anki-editor-*
+;; M-x anki-editor-insert-note
+;; M-x anki-editor-push-notes
+;; M-x anki-helper-*
 
 ** printing in Emacs
-M-x lpr-region	print a text selection
-M-x lpr-buffer	print the whole buffer 
-M-x lpr-customize	customize the ‘lpr’ group.
+
+;; M-x lpr-region	print a text selection
+;; M-x lpr-buffer	print the whole buffer 
+;; M-x lpr-customize	customize the ‘lpr’ group.
 
 ** how to get rid of the M-x ^ (caret)
-customize-variable
-ivy initial inputs alist
-counsel-M-x ^
-change to: Function: ignore
+
+;; customize-variable
+;; ivy initial inputs alist
+;; counsel-M-x ^
+;; change to: Function: ignore
 
 ** org-footnote
 
-org-footnote-new
-org-footnote-delete
-org-footnote-normalize
-org-footnote-action
+;; org-footnote-new
+;; org-footnote-delete
+;; org-footnote-normalize
+;; org-footnote-action
 
 ** editing files
 
-M-x narrow-to-region
-M-x rename-file
-M-x widen
+;; M-x narrow-to-region
+;; M-x rename-file
+;; M-x widen
 
 ** eimp
 
-e.g.
- (find-fline "~/sdb1/home/vagner/Pictures/sermons/jesus_israel_map.jpg")
- Then:
- M-x eimp-increase-image-size
+;; e.g.
+;; (find-fline "~/sdb1/home/vagner/Pictures/sermons/jesus_israel_map.jpg")
+
+;; Then:
+;; M-x eimp-increase-image-size
 
 ** Blue Letter Bible
 
-(find-fline "https://www.blueletterbible.org/")
+;; (find-fline "https://www.blueletterbible.org/")
 
 ** Cloning buffers
 
-C-x 4 c	clone buffer in other window
-C-x 4 C-h	help for cloning
-C-x 5 C-h	help for C-x 5
-C-x 8 C-h	help for C-x 8
+;; C-x 4 c	clone buffer in other window
+;; C-x 4 C-h	help for cloning
+;; C-x 5 C-h	help for C-x 5
+;; C-x 8 C-h	help for C-x 8
 
 ** org-web-tools
 
-- copy any url, place it in an org file or the *scratch* buffer
-- and call:
-- M-x org-web-tools-* over it...
-- See also:
-- M-x org-ref-*
+;; copy any url, place it in an org file or the *scratch* buffer
+
+;; and call:
+;; M-x org-web-tools-* over it...
+;; See also:
+;; M-x org-ref-*
 
 ** pdf-occur
 
-- M-x pdf-occur
-- M-x pdf-occur-goto-occurence
-- M-x pdf-occur-view-occurence
+;; M-x pdf-occur
+;; M-x pdf-occur-goto-occurence
+;; M-x pdf-occur-view-occurence
 
 ** Rectangle
 
-- Only works in Emacs-normal estate
-- C-z in Doom-emacs
-- M-x rectangle-*
-- M-x string-rectangle
+;; Only works in Emacs-normal estate
+;; C-z in Doom-emacs
+;; M-x rectangle-*
+;; M-x string-rectangle
   
 ** smartscan
 
-- its is a multiple-cursor like function
-- usage: put your cursor over a string and hit "smartscan-symbol-replace"
+;; its is a multiple-cursor like function
+;; usage: put your cursor over a string and hit "smartscan-symbol-replace"
 
 ** My blog
 
-- jump pagesBlg
-- on doom-Emacs, do:
-- M-x blog
-- M-x org-static-blog
+;; jump pagesBlg
+;; on doom-Emacs, do:
+;; M-x blog
+;; M-x org-static-blog
 
-- M-x org-static-blog-create-new-post
-- M-x org-static-blog-create-new-draft
-- M-x org-static-blog-publish
+;; M-x org-static-blog-create-new-post
+;; M-x org-static-blog-create-new-draft
+;; M-x org-static-blog-publish
 
-- M-x cypher/lea-edit-blog
-- M-x cypher/lea-view-blog
-- M-x cypher/vagner-edit-blog
-- M-x cypher/vagner-view-blog
+;; M-x cypher/lea-edit-blog
+;; M-x cypher/lea-view-blog
+;; M-x cypher/vagner-edit-blog
+;; M-x cypher/vagner-view-blog
 
-- https://cypher.codeberg.page/
+;; https://cypher.codeberg.page/
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -2538,13 +2569,16 @@ C-x 8 C-h	help for C-x 8
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ** Footnotes
+
 [fn:3] Noto Sans Mono Condensed is a good font 
 
 [fn:1]
-- https://yewtu.be/latest_version?id=B6jfrrwR10k&itag=22&local=true
+;; https://yewtu.be/latest_version?id=B6jfrrwR10k&itag=22&local=true
 
-- install emacs-gtk or emacs-lucid
+;; install emacs-gtk or emacs-lucid
 
 [fn:2] embark, marginalia, vertico, selectrum, consult
-- https://yewtu.be/latest_version?id=5ffb2at2d7w&itag=22&local=true
-- https://yewtu.be/latest_version?id=qpoQiiinCtY&itag=22&local=true
+
+;; https://yewtu.be/latest_version?id=5ffb2at2d7w&itag=22&local=true
+
+;; https://yewtu.be/latest_version?id=qpoQiiinCtY&itag=22&local=true
